@@ -1,0 +1,10 @@
+.repo/
+src/
+mkosi.builddir/
+mkosi.cache/
+mkosi.includedir/
+mkosi.installdir/
+mkosi.output/
+.mkosi-*
+mkosi-clangd.build
+.vscode/

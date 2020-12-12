@@ -1,0 +1,86 @@
+[Distribution]
+Distribution=arch
+Mirror=https://archlinux.uk.mirror.allworldit.com/archlinux
+
+[Packages]
+Cache=/home/daan/.cache/mkosi/arch
+Packages=
+        appstream-qt
+        boost-libs
+        editorconfig-core-c
+        gdb
+        gpsd
+        grantlee
+        gtk2
+        gtk3
+        libaccounts-qt
+        libcanberra
+        libdbusmenu-qt5
+        libdmtx
+        libepoxy
+        libgit2
+        libgpg-error
+        libical
+        libinput
+        libqaccessibilityclient
+        libqalculate
+        libxcb
+        libxkbfile
+        libxtst
+        lmdb
+        networkmanager
+        openconnect
+        packagekit-qt5
+        phonon-qt5
+        pipewire
+        polkit-qt5
+        qca
+        qrencode
+        qt5
+        qt5-webkit
+        sddm
+        signond
+        strace
+        taglib
+        telepathy-accounts-signon
+        telepathy-qt
+        wayland-protocols
+        xcb-util-cursor
+        xorg-server
+        xorg-xinit
+        zxing-cpp
+        xorg-xwayland
+
+BuildPackages=
+        bison
+        boost
+        clang
+        cmake
+        docbook-xsl
+        flex
+        gcc
+        gperf
+        intltool
+        ninja
+        perl
+        perl-uri
+        pkgconf
+        python-cairo
+        python-lxml
+        sassc
+
+SourceFileTransfer=mount
+
+[Partitions]
+RootSize=10G
+
+[Output]
+Format=gpt_btrfs
+Bootable=yes
+
+[Validation]
+Password=
+
+[Host]
+HostonlyInitrd=yes
+NetworkVeth=yes

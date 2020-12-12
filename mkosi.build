@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Work around "Could not find kdoctools catalogs" error.
+mkdir -p /usr/share/kf5
+ln -s "$DESTDIR/usr/share/kf5/kdoctools" /usr/share/kf5/kdoctools
+
+# Work around "Could not find kdedmodule.desktop" error.
+ln -s "$DESTDIR/usr/share/kservicetypes5" /usr/share/kservicetypes5
+
+if [ ! -f "$BUILDDIR"/kde/build.ninja ] ; then
+    cmake -B "$BUILDDIR" -S "$SRCDIR" -G Ninja
+fi
+
+ninja -C "$BUILDDIR" "$@"

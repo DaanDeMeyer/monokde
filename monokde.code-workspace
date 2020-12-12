@@ -1,0 +1,414 @@
+{
+    "folders": [
+        {
+            "path": "src/frameworks/attica"
+        },
+        {
+            "path": "src/frameworks/baloo"
+        },
+        {
+            "path": "src/frameworks/bluez-qt"
+        },
+        {
+            "path": "src/frameworks/breeze-icons"
+        },
+        {
+            "path": "src/frameworks/extra-cmake-modules"
+        },
+        {
+            "path": "src/frameworks/frameworkintegration"
+        },
+        {
+            "path": "src/frameworks/kactivities-stats"
+        },
+        {
+            "path": "src/frameworks/kactivities"
+        },
+        {
+            "path": "src/frameworks/kapidox"
+        },
+        {
+            "path": "src/frameworks/karchive"
+        },
+        {
+            "path": "src/frameworks/kauth"
+        },
+        {
+            "path": "src/frameworks/kbookmarks"
+        },
+        {
+            "path": "src/frameworks/kcalendarcore"
+        },
+        {
+            "path": "src/frameworks/kcmutils"
+        },
+        {
+            "path": "src/frameworks/kcodecs"
+        },
+        {
+            "path": "src/frameworks/kcompletion"
+        },
+        {
+            "path": "src/frameworks/kconfig"
+        },
+        {
+            "path": "src/frameworks/kconfigwidgets"
+        },
+        {
+            "path": "src/frameworks/kcontacts"
+        },
+        {
+            "path": "src/frameworks/kcoreaddons"
+        },
+        {
+            "path": "src/frameworks/kcrash"
+        },
+        {
+            "path": "src/frameworks/kdav"
+        },
+        {
+            "path": "src/frameworks/kdbusaddons"
+        },
+        {
+            "path": "src/frameworks/kdeclarative"
+        },
+        {
+            "path": "src/frameworks/kded"
+        },
+        {
+            "path": "src/frameworks/kdelibs4support"
+        },
+        {
+            "path": "src/frameworks/kdesignerplugin"
+        },
+        {
+            "path": "src/frameworks/kdesu"
+        },
+        {
+            "path": "src/frameworks/kdewebkit"
+        },
+        {
+            "path": "src/frameworks/kdnssd"
+        },
+        {
+            "path": "src/frameworks/kdoctools"
+        },
+        {
+            "path": "src/frameworks/kemoticons"
+        },
+        {
+            "path": "src/frameworks/kfilemetadata"
+        },
+        {
+            "path": "src/frameworks/kglobalaccel"
+        },
+        {
+            "path": "src/frameworks/kguiaddons"
+        },
+        {
+            "path": "src/frameworks/kholidays"
+        },
+        {
+            "path": "src/frameworks/khtml"
+        },
+        {
+            "path": "src/frameworks/ki18n"
+        },
+        {
+            "path": "src/frameworks/kiconthemes"
+        },
+        {
+            "path": "src/frameworks/kidletime"
+        },
+        {
+            "path": "src/frameworks/kimageformats"
+        },
+        {
+            "path": "src/frameworks/kinit"
+        },
+        {
+            "path": "src/frameworks/kio"
+        },
+        {
+            "path": "src/frameworks/kirigami"
+        },
+        {
+            "path": "src/frameworks/kitemmodels"
+        },
+        {
+            "path": "src/frameworks/kitemviews"
+        },
+        {
+            "path": "src/frameworks/kjobwidgets"
+        },
+        {
+            "path": "src/frameworks/kjs"
+        },
+        {
+            "path": "src/frameworks/kjsembed"
+        },
+        {
+            "path": "src/frameworks/kmediaplayer"
+        },
+        {
+            "path": "src/frameworks/knewstuff"
+        },
+        {
+            "path": "src/frameworks/knotifications"
+        },
+        {
+            "path": "src/frameworks/knotifyconfig"
+        },
+        {
+            "path": "src/frameworks/kpackage"
+        },
+        {
+            "path": "src/frameworks/kparts"
+        },
+        {
+            "path": "src/frameworks/kpeople"
+        },
+        {
+            "path": "src/frameworks/kplotting"
+        },
+        {
+            "path": "src/frameworks/kpty"
+        },
+        {
+            "path": "src/frameworks/kquickcharts"
+        },
+        {
+            "path": "src/frameworks/kross"
+        },
+        {
+            "path": "src/frameworks/krunner"
+        },
+        {
+            "path": "src/frameworks/kservice"
+        },
+        {
+            "path": "src/frameworks/ktexteditor"
+        },
+        {
+            "path": "src/frameworks/ktextwidgets"
+        },
+        {
+            "path": "src/frameworks/kunitconversion"
+        },
+        {
+            "path": "src/frameworks/kwallet"
+        },
+        {
+            "path": "src/frameworks/kwayland"
+        },
+        {
+            "path": "src/frameworks/kwidgetsaddons"
+        },
+        {
+            "path": "src/frameworks/kwindowsystem"
+        },
+        {
+            "path": "src/frameworks/kxmlgui"
+        },
+        {
+            "path": "src/frameworks/kxmlrpcclient"
+        },
+        {
+            "path": "src/frameworks/modemmanager-qt"
+        },
+        {
+            "path": "src/frameworks/networkmanager-qt"
+        },
+        {
+            "path": "src/frameworks/oxygen-icons5"
+        },
+        {
+            "path": "src/frameworks/plasma-framework"
+        },
+        {
+            "path": "src/frameworks/prison"
+        },
+        {
+            "path": "src/frameworks/purpose"
+        },
+        {
+            "path": "src/frameworks/qqc2-desktop-style"
+        },
+        {
+            "path": "src/frameworks/solid"
+        },
+        {
+            "path": "src/frameworks/sonnet"
+        },
+        {
+            "path": "src/frameworks/syndication"
+        },
+        {
+            "path": "src/frameworks/syntax-highlighting"
+        },
+        {
+            "path": "src/frameworks/threadweaver"
+        },
+        {
+            "path": "src/kdesupport/plasma-wayland-protocols"
+        },
+        {
+            "path": "src/kde/workspace/bluedevil"
+        },
+        {
+            "path": "src/kde/workspace/breeze-grub"
+        },
+        {
+            "path": "src/kde/workspace/breeze-gtk"
+        },
+        {
+            "path": "src/kde/workspace/breeze-plymouth"
+        },
+        {
+            "path": "src/kde/workspace/breeze"
+        },
+        {
+            "path": "src/kde/workspace/discover"
+        },
+        {
+            "path": "src/kde/workspace/drkonqi"
+        },
+        {
+            "path": "src/kde/workspace/kactivitymanagerd"
+        },
+        {
+            "path": "src/kde/workspace/kde-cli-tools"
+        },
+        {
+            "path": "src/kde/workspace/kde-gtk-config"
+        },
+        {
+            "path": "src/kde/workspace/kdecoration"
+        },
+        {
+            "path": "src/kde/workspace/kdeplasma-addons"
+        },
+        {
+            "path": "src/kde/workspace/kgamma5"
+        },
+        {
+            "path": "src/kde/workspace/khotkeys"
+        },
+        {
+            "path": "src/kde/workspace/kinfocenter"
+        },
+        {
+            "path": "src/kde/workspace/kmenuedit"
+        },
+        {
+            "path": "src/kde/workspace/kscreen"
+        },
+        {
+            "path": "src/kde/workspace/kscreenlocker"
+        },
+        {
+            "path": "src/kde/workspace/ksshaskpass"
+        },
+        {
+            "path": "src/kde/workspace/ksysguard"
+        },
+        {
+            "path": "src/kde/workspace/kwallet-pam"
+        },
+        {
+            "path": "src/kde/workspace/kwayland-integration"
+        },
+        {
+            "path": "src/kde/workspace/kwayland-server"
+        },
+        {
+            "path": "src/kde/workspace/kwin"
+        },
+        {
+            "path": "src/kde/workspace/kwrited"
+        },
+        {
+            "path": "src/kde/workspace/libkscreen"
+        },
+        {
+            "path": "src/kde/workspace/libksysguard"
+        },
+        {
+            "path": "src/kde/workspace/milou"
+        },
+        {
+            "path": "src/kde/workspace/oxygen"
+        },
+        {
+            "path": "src/kde/workspace/plasma-browser-integration"
+        },
+        {
+            "path": "src/kde/workspace/plasma-desktop"
+        },
+        {
+            "path": "src/kde/workspace/plasma-disks"
+        },
+        {
+            "path": "src/kde/workspace/plasma-integration"
+        },
+        {
+            "path": "src/kde/workspace/plasma-nano"
+        },
+        {
+            "path": "src/kde/workspace/plasma-nm"
+        },
+        {
+            "path": "src/kde/workspace/plasma-pa"
+        },
+        {
+            "path": "src/kde/workspace/plasma-phone-components"
+        },
+        {
+            "path": "src/kde/workspace/plasma-sdk"
+        },
+        {
+            "path": "src/kde/workspace/plasma-systemmonitor"
+        },
+        {
+            "path": "src/kde/workspace/plasma-tests"
+        },
+        {
+            "path": "src/kde/workspace/plasma-thunderbolt"
+        },
+        {
+            "path": "src/kde/workspace/plasma-vault"
+        },
+        {
+            "path": "src/kde/workspace/plasma-workspace-wallpapers"
+        },
+        {
+            "path": "src/kde/workspace/plasma-workspace"
+        },
+        {
+            "path": "src/kde/workspace/plymouth-kcm"
+        },
+        {
+            "path": "src/kde/workspace/polkit-kde-agent-1"
+        },
+        {
+            "path": "src/kde/workspace/powerdevil"
+        },
+        {
+            "path": "src/kde/workspace/sddm-kcm"
+        },
+        {
+            "path": "src/kde/workspace/systemsettings"
+        },
+        {
+            "path": "src/kde/workspace/user-manager"
+        },
+        {
+            "path": "src/kde/workspace/xdg-desktop-portal-kde"
+        }
+    ],
+    "settings": {
+        "git.ignoredRepositories": [
+            ".."
+        ]
+    }
+}
