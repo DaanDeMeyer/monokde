@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cat src/sysadmin/repo-metadata/distro-dependencies/fedora.ini |
+    grep -v -E "\[|#" |
+    grep . |
+    xargs --delimiter '\n' mkosi-install
