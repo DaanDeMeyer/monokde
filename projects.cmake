@@ -1,18 +1,24 @@
-# GENERATED CODE! Run tools/gen.py --cmake to regenerate.
+# GENERATED CODE! Run monokde.py --cmake to regenerate.
 
 kde_project(frameworks/extra-cmake-modules)
+kde_project(
+  kdesupport/plasma-wayland-protocols
+  DEPENDS
+    extra-cmake-modules
+)
 kde_project(
   frameworks/ki18n
   DEPENDS
     extra-cmake-modules
 )
 kde_project(
-  frameworks/karchive
+  frameworks/kguiaddons
   DEPENDS
     extra-cmake-modules
+    plasma-wayland-protocols
 )
 kde_project(
-  frameworks/kcoreaddons
+  frameworks/kconfig
   DEPENDS
     extra-cmake-modules
 )
@@ -22,35 +28,20 @@ kde_project(
     extra-cmake-modules
 )
 kde_project(
-  frameworks/kguiaddons
+  frameworks/kcoreaddons
   DEPENDS
     extra-cmake-modules
 )
 kde_project(
-  frameworks/kdoctools
+  frameworks/kcolorscheme
   DEPENDS
     extra-cmake-modules
-    karchive
+    kconfig
+    kguiaddons
     ki18n
 )
 kde_project(
-  frameworks/kconfig
-  DEPENDS
-    extra-cmake-modules
-)
-kde_project(
   frameworks/kcodecs
-  DEPENDS
-    extra-cmake-modules
-)
-kde_project(
-  frameworks/kauth
-  DEPENDS
-    extra-cmake-modules
-    kcoreaddons
-)
-kde_project(
-  frameworks/kwindowsystem
   DEPENDS
     extra-cmake-modules
 )
@@ -63,11 +54,10 @@ kde_project(
   frameworks/kconfigwidgets
   DEPENDS
     extra-cmake-modules
-    kauth
-    kcoreaddons
     kcodecs
+    kcolorscheme
     kconfig
-    kdoctools
+    kcoreaddons
     kguiaddons
     ki18n
     kwidgetsaddons
@@ -76,28 +66,22 @@ kde_project(
   frameworks/kcompletion
   DEPENDS
     extra-cmake-modules
+    kcodecs
     kconfig
     kwidgetsaddons
 )
 kde_project(
-  frameworks/kitemviews
-  DEPENDS
-    extra-cmake-modules
-)
-kde_project(
-  frameworks/kdbusaddons
-  DEPENDS
-    extra-cmake-modules
-)
-kde_project(
-  frameworks/kcrash
-  DEPENDS
-    extra-cmake-modules
-    kcoreaddons
-    kwindowsystem
-)
-kde_project(
   frameworks/breeze-icons
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  frameworks/karchive
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  frameworks/kglobalaccel
   DEPENDS
     extra-cmake-modules
 )
@@ -113,27 +97,92 @@ kde_project(
     sonnet
 )
 kde_project(
+  frameworks/kitemviews
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
   frameworks/kiconthemes
   DEPENDS
     extra-cmake-modules
-    ki18n
-    kconfigwidgets
-    kwidgetsaddons
-    kitemviews
     karchive
+    kcolorscheme
+    kconfigwidgets
+    ki18n
+    kwidgetsaddons
+    breeze-icons
 )
 kde_project(
-  frameworks/kglobalaccel
+  frameworks/kwindowsystem
+  DEPENDS
+    extra-cmake-modules
+    plasma-wayland-protocols
+)
+kde_project(
+  frameworks/knotifications
   DEPENDS
     extra-cmake-modules
     kconfig
+)
+kde_project(
+  frameworks/kdbusaddons
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  frameworks/kdoctools
+  DEPENDS
+    extra-cmake-modules
+    karchive
+    ki18n
+)
+kde_project(
+  frameworks/kxmlgui
+  DEPENDS
+    extra-cmake-modules
+    kconfig
+    kconfigwidgets
+    ki18n
+    kiconthemes
+    kitemviews
+    ktextwidgets
+    kwidgetsaddons
+    kglobalaccel
+)
+kde_project(
+  frameworks/kitemmodels
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  frameworks/kcrash
+  DEPENDS
+    extra-cmake-modules
     kcoreaddons
-    kcrash
+)
+kde_project(
+  frameworks/kwallet
+  DEPENDS
+    extra-cmake-modules
+    kcolorscheme
+    kconfig
+    kcoreaddons
     kdbusaddons
+    ki18n
+    kiconthemes
+    knotifications
+    kwidgetsaddons
     kwindowsystem
 )
 kde_project(
-  frameworks/attica
+  frameworks/kauth
+  DEPENDS
+    extra-cmake-modules
+    kcoreaddons
+    kwindowsystem
+)
+kde_project(
+  frameworks/solid
   DEPENDS
     extra-cmake-modules
 )
@@ -143,223 +192,24 @@ kde_project(
     extra-cmake-modules
     kconfig
     kcoreaddons
-    kcrash
-    kdbusaddons
     ki18n
     kdoctools
-)
-kde_project(
-  frameworks/knotifications
-  DEPENDS
-    extra-cmake-modules
-    kwindowsystem
-    kconfig
-    kcoreaddons
-)
-kde_project(
-  frameworks/kxmlgui
-  DEPENDS
-    extra-cmake-modules
-    attica
-    kitemviews
-    kconfig
-    kglobalaccel
-    kconfigwidgets
-    ki18n
-    kiconthemes
-    ktextwidgets
-    kwidgetsaddons
-    kwindowsystem
-    breeze-icons
-)
-kde_project(
-  frameworks/kwallet
-  DEPENDS
-    extra-cmake-modules
-    kconfig
-    kcoreaddons
-    kdbusaddons
-    kiconthemes
-    ki18n
-    knotifications
-    kservice
-    kwindowsystem
-    kwidgetsaddons
-)
-kde_project(
-  frameworks/kbookmarks
-  DEPENDS
-    extra-cmake-modules
-    kconfigwidgets
-    kcoreaddons
-    kcodecs
-    kconfig
-    kiconthemes
-    kxmlgui
 )
 kde_project(
   frameworks/kjobwidgets
   DEPENDS
     extra-cmake-modules
     kcoreaddons
+    knotifications
     kwidgetsaddons
 )
 kde_project(
-  frameworks/solid
+  frameworks/kbookmarks
   DEPENDS
     extra-cmake-modules
-)
-kde_project(
-  frameworks/kio
-  DEPENDS
-    extra-cmake-modules
-    kdbusaddons
-    ki18n
-    kguiaddons
+    kconfig
     kconfigwidgets
-    kitemviews
     kcoreaddons
-    kwidgetsaddons
-    kservice
-    karchive
-    solid
-    kjobwidgets
-    kiconthemes
-    kwindowsystem
-    kcrash
-    kcompletion
-    kdoctools
-    ktextwidgets
-    kxmlgui
-    kbookmarks
-    knotifications
-    kconfig
-    kwallet
-)
-kde_project(
-  frameworks/syntax-highlighting
-  DEPENDS
-    extra-cmake-modules
-)
-kde_project(
-  frameworks/kparts
-  DEPENDS
-    extra-cmake-modules
-    kio
-    kxmlgui
-    ktextwidgets
-    knotifications
-)
-kde_project(
-  kdesupport/plasma-wayland-protocols
-  DEPENDS
-    extra-cmake-modules
-)
-kde_project(
-  frameworks/kpackage
-  DEPENDS
-    extra-cmake-modules
-    karchive
-    kcoreaddons
-    ki18n
-    kdoctools
-)
-kde_project(
-  frameworks/kirigami
-  DEPENDS
-    extra-cmake-modules
-)
-kde_project(
-  frameworks/oxygen-icons5
-  DEPENDS
-    extra-cmake-modules
-)
-kde_project(
-  frameworks/ktexteditor
-  DEPENDS
-    extra-cmake-modules
-    karchive
-    kconfig
-    kguiaddons
-    ki18n
-    kjobwidgets
-    kio
-    kparts
-    sonnet
-    kxmlgui
-    syntax-highlighting
-)
-kde_project(
-  frameworks/kwayland
-  DEPENDS
-    extra-cmake-modules
-    plasma-wayland-protocols
-)
-kde_project(
-  frameworks/kunitconversion
-  DEPENDS
-    extra-cmake-modules
-    ki18n
-    kconfig
-)
-kde_project(
-  frameworks/threadweaver
-  DEPENDS
-    extra-cmake-modules
-)
-kde_project(
-  frameworks/kross
-  DEPENDS
-    extra-cmake-modules
-    ki18n
-    kiconthemes
-    kio
-    kparts
-)
-kde_project(
-  frameworks/kitemmodels
-  DEPENDS
-    extra-cmake-modules
-)
-kde_project(
-  frameworks/kidletime
-  DEPENDS
-    extra-cmake-modules
-)
-kde_project(
-  frameworks/kdnssd
-  DEPENDS
-    extra-cmake-modules
-)
-kde_project(
-  frameworks/kdeclarative
-  DEPENDS
-    extra-cmake-modules
-    kconfig
-    ki18n
-    kiconthemes
-    kio
-    kpackage
-)
-kde_project(
-  frameworks/kactivities
-  DEPENDS
-    extra-cmake-modules
-    kconfig
-    kwindowsystem
-    kcoreaddons
-    kio
-)
-kde_project(
-  frameworks/kinit
-  DEPENDS
-    extra-cmake-modules
-    kservice
-    kio
-    ki18n
-    kwindowsystem
-    kcrash
-    kdoctools
 )
 kde_project(
   frameworks/syndication
@@ -368,49 +218,367 @@ kde_project(
     kcodecs
 )
 kde_project(
-  frameworks/plasma-framework
+  frameworks/kpackage
   DEPENDS
     extra-cmake-modules
-    kactivities
     karchive
-    kauth
+    kcoreaddons
+    kdoctools
+    ki18n
+)
+kde_project(
+  frameworks/kirigami
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  frameworks/attica
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  frameworks/kio
+  DEPENDS
+    extra-cmake-modules
+    karchive
     kbookmarks
-    kcodecs
+    kcolorscheme
     kcompletion
     kconfig
     kconfigwidgets
     kcoreaddons
+    kguiaddons
+    ki18n
+    kiconthemes
+    kitemviews
+    kjobwidgets
+    knotifications
+    kservice
+    kwidgetsaddons
+    kwindowsystem
+    solid
     kcrash
     kdbusaddons
-    kdeclarative
-    kdnssd
+    kdoctools
+    kauth
+    kwallet
+)
+kde_project(
+  frameworks/syntax-highlighting
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  frameworks/threadweaver
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  frameworks/ktexttemplate
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  frameworks/knewstuff
+  DEPENDS
+    attica
+    extra-cmake-modules
+    karchive
+    kconfig
+    kcoreaddons
+    ki18n
+    kirigami
+    kpackage
+    kwidgetsaddons
+    syndication
+)
+kde_project(
+  frameworks/krunner
+  DEPENDS
+    extra-cmake-modules
+    kconfig
+    kcoreaddons
+    ki18n
+    kitemmodels
+    threadweaver
+)
+kde_project(
+  frameworks/kcontacts
+  DEPENDS
+    extra-cmake-modules
+    kcodecs
+    kconfig
+    kcoreaddons
+    ki18n
+)
+kde_project(
+  frameworks/kcmutils
+  DEPENDS
+    extra-cmake-modules
+    kcoreaddons
+    ki18n
+    kio
+    kirigami
+    kitemviews
+    kxmlgui
+)
+kde_project(
+  frameworks/kcalendarcore
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  frameworks/prison
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  frameworks/purpose
+  DEPENDS
+    extra-cmake-modules
+    kconfig
+    kcoreaddons
+    ki18n
+    kio
+    kirigami
+    kservice
+)
+kde_project(
+  frameworks/kparts
+  DEPENDS
+    extra-cmake-modules
+    kio
+    knotifications
+    kxmlgui
+)
+kde_project(
+  frameworks/knotifyconfig
+  DEPENDS
+    extra-cmake-modules
+    ki18n
+    kio
+    knotifications
+    kxmlgui
+)
+kde_project(
+  kde/workspace/plasma-activities
+  DEPENDS
+    extra-cmake-modules
+    kconfig
+    kcoreaddons
+    kwindowsystem
+)
+kde_project(
+  frameworks/ksvg
+  DEPENDS
+    extra-cmake-modules
+    karchive
+    kcolorscheme
+    kconfig
+    kcoreaddons
+    kguiaddons
+    kirigami
+)
+kde_project(
+  frameworks/oxygen-icons
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  frameworks/kdeclarative
+  DEPENDS
+    extra-cmake-modules
+    kconfig
+    kguiaddons
+    ki18n
+    kwidgetsaddons
+    kglobalaccel
+)
+kde_project(
+  kde/workspace/libplasma
+  DEPENDS
+    extra-cmake-modules
+    karchive
+    kcmutils
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kdbusaddons
     kglobalaccel
     kguiaddons
     ki18n
     kiconthemes
-    kidletime
-    kitemmodels
-    kitemviews
-    kjobwidgets
     kio
-    kross
+    kirigami
     knotifications
-    kparts
     kpackage
+    kparts
+    ksvg
+    kwidgetsaddons
+    kwindowsystem
+    plasma-activities
+)
+kde_project(
+  kde/workspace/libkscreen
+  DEPENDS
+    extra-cmake-modules
+    plasma-wayland-protocols
+)
+kde_project(
+  kde/workspace/layer-shell-qt
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  frameworks/kidletime
+  DEPENDS
+    extra-cmake-modules
+    plasma-wayland-protocols
+)
+kde_project(
+  kde/workspace/kdecoration
+  DEPENDS
+    extra-cmake-modules
+    ki18n
+)
+kde_project(
+  frameworks/frameworkintegration
+  DEPENDS
+    extra-cmake-modules
+    kcolorscheme
+    kconfig
+    kconfigwidgets
+    kguiaddons
+    ki18n
+    kiconthemes
+    kio
+    kitemviews
+    knewstuff
+    knotifications
+    kpackage
+    kwidgetsaddons
+    oxygen-icons
+)
+kde_project(
+  kde/workspace/kwayland
+  DEPENDS
+    extra-cmake-modules
+    plasma-wayland-protocols
+)
+kde_project(
+  kde/workspace/kscreenlocker
+  DEPENDS
+    extra-cmake-modules
+    kauth
+    kcmutils
+    kcodecs
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kcrash
+    kglobalaccel
+    ki18n
+    kidletime
+    knotifications
     kservice
-    solid
-    sonnet
-    ktextwidgets
-    threadweaver
-    kunitconversion
-    kwallet
-    kwayland
+    ksvg
     kwidgetsaddons
     kwindowsystem
     kxmlgui
-    ktexteditor
-    oxygen-icons5
+    layer-shell-qt
+    libkscreen
+    libplasma
+    kdeclarative
+)
+kde_project(
+  kde/workspace/kpipewire
+  DEPENDS
+    extra-cmake-modules
+    kcoreaddons
+    ki18n
+    plasma-wayland-protocols
+)
+kde_project(
+  kde/workspace/breeze
+  DEPENDS
+    extra-cmake-modules
+    kcolorscheme
+    kconfig
+    kcoreaddons
+    kguiaddons
+    ki18n
+    kiconthemes
     kirigami
+    kwindowsystem
+    frameworkintegration
+    kcmutils
+    kdecoration
+)
+kde_project(
+  frameworks/kfilemetadata
+  DEPENDS
+    extra-cmake-modules
+    karchive
+    kcodecs
+    kcoreaddons
+    ki18n
+)
+kde_project(
+  kde/workspace/kwin
+  DEPENDS
+    breeze-icons
+    extra-cmake-modules
+    kcmutils
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kcrash
+    kdeclarative
+    kdoctools
+    kglobalaccel
+    ki18n
+    kidletime
+    knewstuff
+    knotifications
+    kpackage
+    kservice
+    ksvg
+    kwidgetsaddons
+    kwindowsystem
+    kxmlgui
+    plasma-wayland-protocols
+    breeze
+    kdecoration
+    kpipewire
+    kscreenlocker
+    kwayland
+    plasma-activities
+    kirigami
+    libplasma
+)
+kde_project(
+  kde/workspace/plasma-activities-stats
+  DEPENDS
+    extra-cmake-modules
+    plasma-activities
+)
+kde_project(
+  frameworks/kdnssd
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  kde/workspace/libksysguard
+  DEPENDS
+    extra-cmake-modules
+    kauth
+    kconfig
+    kcoreaddons
+    ki18n
+    knewstuff
+    kpackage
+    kservice
+    solid
 )
 kde_project(
   frameworks/kpty
@@ -420,81 +588,59 @@ kde_project(
     ki18n
 )
 kde_project(
-  frameworks/kdesignerplugin
+  frameworks/kholidays
   DEPENDS
     extra-cmake-modules
-    kcoreaddons
+)
+kde_project(
+  frameworks/ktexteditor
+  DEPENDS
+    breeze-icons
+    extra-cmake-modules
+    karchive
     kconfig
-    kdoctools
-)
-kde_project(
-  frameworks/kemoticons
-  DEPENDS
-    extra-cmake-modules
-    karchive
-    kservice
-)
-kde_project(
-  frameworks/kded
-  DEPENDS
-    extra-cmake-modules
+    kguiaddons
     ki18n
-    kcoreaddons
-    kdbusaddons
-    kservice
-    kwindowsystem
-    kcrash
-    kinit
-    kdoctools
-)
-kde_project(
-  frameworks/knewstuff
-  DEPENDS
-    extra-cmake-modules
-    attica
-    ki18n
-    kitemviews
-    karchive
-    kiconthemes
+    kio
+    kjobwidgets
+    kparts
     ktextwidgets
     kxmlgui
-    solid
-    kbookmarks
-    kio
-    kirigami
-    kpackage
-    syndication
+    sonnet
+    syntax-highlighting
+    kauth
 )
 kde_project(
-  frameworks/kfilemetadata
+  frameworks/baloo
   DEPENDS
     extra-cmake-modules
-    ki18n
-    karchive
+    kconfig
     kcoreaddons
+    kcrash
+    kdbusaddons
+    kfilemetadata
+    ki18n
+    kidletime
+    kio
+    solid
+)
+kde_project(
+  kde/workspace/milou
+  DEPENDS
+    extra-cmake-modules
+    kconfig
+    ki18n
+    krunner
+    libplasma
 )
 kde_project(
   frameworks/qqc2-desktop-style
   DEPENDS
     extra-cmake-modules
-    kirigami
+    kcolorscheme
     kiconthemes
-    kconfigwidgets
-)
-kde_project(
-  frameworks/purpose
-  DEPENDS
-    extra-cmake-modules
-    kcoreaddons
-    kconfig
-    ki18n
-    kio
     kirigami
-)
-kde_project(
-  frameworks/prison
-  DEPENDS
-    extra-cmake-modules
+    sonnet
 )
 kde_project(
   frameworks/networkmanager-qt
@@ -502,301 +648,51 @@ kde_project(
     extra-cmake-modules
 )
 kde_project(
-  frameworks/krunner
+  kde/workspace/plasma5support
   DEPENDS
     extra-cmake-modules
+    kconfig
+    kcoreaddons
+    kguiaddons
+    ki18n
+    kio
+    knotifications
+    kservice
     solid
-    kio
+    libksysguard
+    libplasma
+)
+kde_project(
+  kde/workspace/plasma-nano
+  DEPENDS
+    extra-cmake-modules
     kconfig
-    kcompletion
-    kservice
-    threadweaver
-    ki18n
-    plasma-framework
-)
-kde_project(
-  frameworks/kplotting
-  DEPENDS
-    extra-cmake-modules
-)
-kde_project(
-  frameworks/kpeople
-  DEPENDS
-    extra-cmake-modules
     kcoreaddons
-    kwidgetsaddons
     ki18n
-    kitemviews
-)
-kde_project(
-  frameworks/knotifyconfig
-  DEPENDS
-    extra-cmake-modules
-    kio
-    ki18n
-    knotifications
-)
-kde_project(
-  frameworks/kimageformats
-  DEPENDS
-    extra-cmake-modules
-    karchive
-)
-kde_project(
-  frameworks/kholidays
-  DEPENDS
-    extra-cmake-modules
-)
-kde_project(
-  frameworks/kdesu
-  DEPENDS
-    extra-cmake-modules
-    kcoreaddons
+    kitemmodels
     kservice
-    kpty
-)
-kde_project(
-  frameworks/kdelibs4support
-  DEPENDS
-    extra-cmake-modules
-    ki18n
-    kguiaddons
-    kwidgetsaddons
-    kdbusaddons
-    kconfig
-    kconfigwidgets
-    kitemviews
-    kiconthemes
-    kunitconversion
+    ksvg
     kwindowsystem
-    kservice
-    kcompletion
-    ktextwidgets
-    kxmlgui
-    kbookmarks
-    kio
-    kded
-    kinit
-    kdoctools
-    kemoticons
-    kcrash
-    knotifications
-    kparts
-    kdesignerplugin
-    kglobalaccel
+    kwayland
+    libplasma
 )
 kde_project(
-  frameworks/kcmutils
+  frameworks/kuserfeedback
   DEPENDS
     extra-cmake-modules
-    kitemviews
-    kconfigwidgets
-    kcoreaddons
-    ki18n
-    kiconthemes
-    kservice
-    kxmlgui
-    kdeclarative
-    kauth
 )
 kde_project(
-  frameworks/kactivities-stats
+  frameworks/kunitconversion
   DEPENDS
     extra-cmake-modules
-    kactivities
-)
-kde_project(
-  frameworks/frameworkintegration
-  DEPENDS
-    extra-cmake-modules
-    ki18n
-    kguiaddons
-    kwidgetsaddons
-    kconfigwidgets
-    kitemviews
     kconfig
-    kiconthemes
-    knotifications
-    kio
-    kinit
-    oxygen-icons5
-    kpackage
-    knewstuff
-)
-kde_project(
-  frameworks/bluez-qt
-  DEPENDS
-    extra-cmake-modules
-)
-kde_project(
-  frameworks/baloo
-  DEPENDS
-    extra-cmake-modules
-    kfilemetadata
-    kcoreaddons
-    kconfig
-    kdbusaddons
     ki18n
-    kidletime
-    solid
-    kcrash
-    kio
-)
-set(KF5UMBRELLA_DEPS
-  extra-cmake-modules
-  attica
-  baloo
-  bluez-qt
-  breeze-icons
-  frameworkintegration
-  kactivities
-  kactivities-stats
-  karchive
-  kauth
-  kbookmarks
-  kcmutils
-  kcodecs
-  kcompletion
-  kconfig
-  kconfigwidgets
-  kcoreaddons
-  kcrash
-  kdbusaddons
-  kdeclarative
-  kded
-  kdelibs4support
-  kdesu
-  kdnssd
-  kdoctools
-  kemoticons
-  kfilemetadata
-  kglobalaccel
-  kguiaddons
-  kholidays
-  ki18n
-  kiconthemes
-  kidletime
-  kimageformats
-  kinit
-  kio
-  kirigami
-  kitemmodels
-  kitemviews
-  kjobwidgets
-  knewstuff
-  knotifications
-  knotifyconfig
-  kpackage
-  kparts
-  kpeople
-  kplotting
-  kpty
-  krunner
-  kservice
-  ktexteditor
-  ktextwidgets
-  kunitconversion
-  kwallet
-  kwayland
-  kwidgetsaddons
-  kwindowsystem
-  kxmlgui
-  networkmanager-qt
-  oxygen-icons5
-  plasma-framework
-  prison
-  purpose
-  qqc2-desktop-style
-  solid
-  sonnet
-  syndication
-  syntax-highlighting
-  threadweaver
 )
 kde_project(
-  frameworks/kcalendarcore
+  frameworks/kstatusnotifieritem
   DEPENDS
     extra-cmake-modules
-)
-kde_project(
-  frameworks/kcontacts
-  DEPENDS
-    extra-cmake-modules
-    kcoreaddons
-    ki18n
-    kconfig
-    kcodecs
-)
-kde_project(
-  kde/workspace/kdecoration
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-)
-kde_project(
-  kde/workspace/layer-shell-qt
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-)
-kde_project(
-  frameworks/kjs
-  DEPENDS
-    extra-cmake-modules
-    kdoctools
-)
-kde_project(
-  kde/workspace/kwayland-server
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-    plasma-wayland-protocols
-)
-kde_project(
-  kde/workspace/breeze
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-    kdecoration
-)
-kde_project(
-  kde/workspace/kwayland-integration
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-)
-kde_project(
-  kde/workspace/kscreenlocker
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-    layer-shell-qt
-)
-kde_project(
-  frameworks/khtml
-  DEPENDS
-    extra-cmake-modules
-    karchive
-    ki18n
-    kcoreaddons
-    kguiaddons
-    kdbusaddons
-    kservice
     kwindowsystem
-    kcrash
-    kinit
-    kjs
-    kconfigwidgets
-    kitemviews
-    kiconthemes
-    knotifications
-    kcompletion
-    ktextwidgets
-    kxmlgui
-    kparts
-    kio
-    kwallet
-    kglobalaccel
 )
 kde_project(
   frameworks/kquickcharts
@@ -804,64 +700,99 @@ kde_project(
     extra-cmake-modules
 )
 kde_project(
-  frameworks/kjsembed
+  frameworks/kdesu
   DEPENDS
     extra-cmake-modules
-    kjs
-    ki18n
+    kconfig
+    kcoreaddons
+    kpty
+)
+kde_project(
+  frameworks/kded
+  DEPENDS
+    extra-cmake-modules
+    kcoreaddons
+    kcrash
+    kdbusaddons
     kdoctools
-)
-kde_project(
-  kde/workspace/kactivitymanagerd
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-)
-kde_project(
-  kde/workspace/libkscreen
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-)
-kde_project(
-  kde/workspace/milou
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-)
-kde_project(
-  kde/workspace/kwin
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-    kdecoration
-    kscreenlocker
-    kwayland-integration
-    breeze
-    kwayland-server
-)
-kde_project(
-  kde/workspace/libksysguard
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
+    ki18n
+    kservice
 )
 kde_project(
   kde/workspace/plasma-workspace
   DEPENDS
-    ${KF5UMBRELLA_DEPS}
+    attica
+    baloo
     extra-cmake-modules
-    libksysguard
-    kwin
-    milou
-    breeze
-    libkscreen
-    kscreenlocker
-    kactivitymanagerd
-    layer-shell-qt
-    prison
-    kjsembed
+    kauth
+    kbookmarks
+    kcmutils
+    kcodecs
+    kcompletion
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kcrash
+    kdbusaddons
+    kdeclarative
+    kded
+    kdesu
+    kfilemetadata
+    kglobalaccel
+    kguiaddons
+    kholidays
+    ki18n
+    kiconthemes
+    kio
+    kitemmodels
+    kitemviews
+    kjobwidgets
+    knewstuff
+    knotifications
+    knotifyconfig
+    kpackage
+    kparts
     kquickcharts
+    krunner
+    kservice
+    kstatusnotifieritem
+    ktexteditor
+    ktextwidgets
+    kunitconversion
+    kuserfeedback
+    kwallet
+    kwidgetsaddons
+    kwindowsystem
+    kxmlgui
+    prison
+    solid
+    sonnet
+    plasma-wayland-protocols
+    kpipewire
+    kscreenlocker
+    kwayland
+    kwin
+    layer-shell-qt
+    libkscreen
+    libksysguard
+    libplasma
+    plasma-activities
+    plasma-activities-stats
+    plasma-nano
+    plasma5support
+    networkmanager-qt
+    qqc2-desktop-style
+    milou
+)
+kde_project(
+  frameworks/modemmanager-qt
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  frameworks/bluez-qt
+  DEPENDS
+    extra-cmake-modules
 )
 kde_project(
   frameworks/kdav
@@ -870,197 +801,900 @@ kde_project(
     kio
 )
 kde_project(
-  kde/workspace/oxygen
+  kde/workspace/qqc2-breeze-style
   DEPENDS
-    ${KF5UMBRELLA_DEPS}
     extra-cmake-modules
-    kdecoration
+    kcodecs
+    kcolorscheme
+    kconfig
+    kcoreaddons
+    kguiaddons
+    kirigami
+    kquickcharts
+    kiconthemes
 )
 kde_project(
-  kde/workspace/ksysguard
+  kde/workspace/plasma-pa
   DEPENDS
-    ${KF5UMBRELLA_DEPS}
     extra-cmake-modules
-    libksysguard
-)
-kde_project(
-  kde/workspace/powerdevil
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
+    kcmutils
+    kconfig
+    kcoreaddons
+    kdeclarative
+    kglobalaccel
+    ki18n
+    kpackage
+    kstatusnotifieritem
+    ksvg
+    libplasma
     plasma-workspace
+)
+kde_project(
+  kde/workspace/plasma-nm
+  DEPENDS
+    extra-cmake-modules
+    kauth
+    kcmutils
+    kcodecs
+    kcompletion
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kdbusaddons
+    ki18n
+    kio
+    kjobwidgets
+    knotifications
+    kpackage
+    kservice
+    ksvg
+    kwallet
+    kwidgetsaddons
+    kwindowsystem
+    modemmanager-qt
+    networkmanager-qt
+    solid
+    libplasma
+)
+kde_project(
+  kde/workspace/bluedevil
+  DEPENDS
+    bluez-qt
+    extra-cmake-modules
+    kauth
+    kcmutils
+    kcodecs
+    kcompletion
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kdbusaddons
+    kdoctools
+    ki18n
+    kio
+    kitemviews
+    kjobwidgets
+    knotifications
+    kservice
+    kwidgetsaddons
+    kwindowsystem
+    kxmlgui
+    solid
+    libplasma
+)
+kde_project(
+  kde/workspace/kactivitymanagerd
+  DEPENDS
+    extra-cmake-modules
+    kauth
+    kcodecs
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kcrash
+    kdbusaddons
+    kglobalaccel
+    ki18n
+    kio
+    kservice
+    kwidgetsaddons
+    kwindowsystem
+    kxmlgui
+)
+kde_project(
+  kde/workspace/plasma-integration
+  DEPENDS
+    extra-cmake-modules
+    kcolorscheme
+    kconfig
+    kcoreaddons
+    kguiaddons
+    ki18n
+    kiconthemes
+    kio
+    kjobwidgets
+    knotifications
+    kservice
+    kstatusnotifieritem
+    kwidgetsaddons
+    kwindowsystem
+    kxmlgui
+    breeze
 )
 kde_project(
   kde/workspace/systemsettings
   DEPENDS
-    ${KF5UMBRELLA_DEPS}
     extra-cmake-modules
-    plasma-workspace
-    khtml
+    kcmutils
+    kconfig
+    kcrash
+    kdbusaddons
+    kdoctools
+    kguiaddons
+    ki18n
+    kiconthemes
+    kio
+    kirigami
+    kitemmodels
+    kitemviews
+    knotifications
+    krunner
+    kservice
+    kwidgetsaddons
+    kwindowsystem
+    kxmlgui
+    plasma-activities
 )
 kde_project(
-  frameworks/kdewebkit
+  kde/workspace/powerdevil
+  DEPENDS
+    extra-cmake-modules
+    kauth
+    kcmutils
+    kcodecs
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kcrash
+    kdbusaddons
+    kglobalaccel
+    ki18n
+    kidletime
+    kio
+    kjobwidgets
+    knotifications
+    kservice
+    kwindowsystem
+    kxmlgui
+    solid
+    libkscreen
+    plasma-activities
+    plasma-workspace
+)
+kde_project(
+  kde/workspace/xdg-desktop-portal-kde
+  DEPENDS
+    extra-cmake-modules
+    kauth
+    kcodecs
+    kcompletion
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    ki18n
+    kio
+    kirigami
+    kitemviews
+    kjobwidgets
+    knotifications
+    kservice
+    kstatusnotifieritem
+    kwidgetsaddons
+    kwindowsystem
+    kxmlgui
+    solid
+    kwayland
+    kiconthemes
+)
+kde_project(
+  kde/workspace/plasma-systemmonitor
+  DEPENDS
+    attica
+    extra-cmake-modules
+    kconfig
+    kcoreaddons
+    kdbusaddons
+    kglobalaccel
+    ki18n
+    kio
+    kitemmodels
+    knewstuff
+    kpackage
+    kservice
+    kwindowsystem
+    libksysguard
+    kiconthemes
+)
+kde_project(
+  frameworks/kpeople
+  DEPENDS
+    extra-cmake-modules
+    kcontacts
+    kcoreaddons
+    ki18n
+    kitemviews
+    kwidgetsaddons
+)
+kde_project(
+  frameworks/kplotting
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  frameworks/kimageformats
+  DEPENDS
+    extra-cmake-modules
+    karchive
+)
+kde_project(
+  kde/workspace/wacomtablet
+  DEPENDS
+    extra-cmake-modules
+    kcmutils
+    kconfig
+    kcoreaddons
+    kdbusaddons
+    kdoctools
+    kglobalaccel
+    ki18n
+    kio
+    knotifications
+    kwidgetsaddons
+    kwindowsystem
+    kxmlgui
+    libplasma
+    plasma5support
+)
+kde_project(
+  kde/workspace/sddm-kcm
+  DEPENDS
+    extra-cmake-modules
+    karchive
+    kauth
+    kcmutils
+    kcoreaddons
+    ki18n
+    kio
+    knewstuff
+    kservice
+)
+kde_project(
+  kde/workspace/print-manager
+  DEPENDS
+    extra-cmake-modules
+    kcmutils
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kdbusaddons
+    ki18n
+    kiconthemes
+    kio
+    kirigami
+    knotifications
+    kwidgetsaddons
+    kwindowsystem
+    libplasma
+)
+kde_project(
+  kde/workspace/polkit-kde-agent-1
   DEPENDS
     extra-cmake-modules
     kcoreaddons
-    kwallet
-    kio
-    knotifications
-    kparts
+    kcrash
+    kdbusaddons
+    ki18n
+    kwindowsystem
 )
 kde_project(
-  frameworks/kmediaplayer
+  kde/workspace/plymouth-kcm
   DEPENDS
     extra-cmake-modules
+    karchive
+    kauth
+    kcmutils
+    kcodecs
+    kconfig
+    kconfigwidgets
+    kcoreaddons
     ki18n
-    kparts
+    kio
+    knewstuff
+    kservice
+    kwidgetsaddons
     kxmlgui
 )
 kde_project(
-  frameworks/modemmanager-qt
+  kde/workspace/plasma-welcome
   DEPENDS
     extra-cmake-modules
+    kcoreaddons
+    kdbusaddons
+    ki18n
+    kio
+    kirigami
+    kjobwidgets
+    knewstuff
+    knotifications
+    ksvg
+    kwindowsystem
+    libplasma
 )
 kde_project(
-  frameworks/kxmlrpcclient
+  kde/workspace/plasma-vault
   DEPENDS
     extra-cmake-modules
+    kauth
+    kcodecs
+    kcompletion
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kdbusaddons
+    ki18n
     kio
+    kitemmodels
+    kjobwidgets
+    kpackage
+    kservice
+    kwidgetsaddons
+    kwindowsystem
+    solid
+    libksysguard
+    libplasma
+    plasma-activities
+    networkmanager-qt
+)
+kde_project(
+  kde/workspace/plasma-thunderbolt
+  DEPENDS
+    extra-cmake-modules
+    kcmutils
+    kconfig
+    kcoreaddons
+    kdbusaddons
+    ki18n
+    knotifications
+    kservice
+)
+kde_project(
+  kde/workspace/plasma-sdk
+  DEPENDS
+    extra-cmake-modules
+    karchive
+    kauth
+    kcmutils
+    kcodecs
+    kcompletion
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kdbusaddons
+    ki18n
+    kiconthemes
+    kio
+    kitemmodels
+    kjobwidgets
+    kpackage
+    kparts
+    ksvg
+    ktexteditor
+    ktextwidgets
+    kwidgetsaddons
+    kwindowsystem
+    kxmlgui
+    solid
+    sonnet
+    syntax-highlighting
+    libplasma
+    plasma5support
+)
+kde_project(
+  kde/workspace/plasma-mobile
+  DEPENDS
+    extra-cmake-modules
+    kconfig
+    kcoreaddons
+    ki18n
+    kio
+    kitemmodels
+    kjobwidgets
+    knotifications
+    kpackage
+    kservice
+    kwindowsystem
+    modemmanager-qt
+    networkmanager-qt
+    kwayland
+    kwin
+    libkscreen
+    libplasma
+    plasma-workspace
+    bluez-qt
+    bluedevil
+    milou
+    plasma-nm
+    plasma-pa
+    qqc2-breeze-style
+)
+kde_project(
+  kde/workspace/plasma-firewall
+  DEPENDS
+    extra-cmake-modules
+    kauth
+    kcmutils
+    kconfig
+    kcoreaddons
+    ki18n
+)
+kde_project(
+  kde/workspace/plasma-disks
+  DEPENDS
+    extra-cmake-modules
+    kauth
+    kcmutils
+    kcodecs
+    kconfig
+    kcoreaddons
+    kdbusaddons
+    ki18n
+    kio
+    knotifications
+    kservice
+    kwidgetsaddons
+    kwindowsystem
+    solid
 )
 kde_project(
   kde/workspace/plasma-desktop
   DEPENDS
-    ${KF5UMBRELLA_DEPS}
+    attica
+    baloo
     extra-cmake-modules
-    systemsettings
-    powerdevil
-    ksysguard
-    oxygen
+    kauth
+    kcmutils
+    kcodecs
+    kcompletion
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kcrash
+    kdbusaddons
+    kfilemetadata
+    kglobalaccel
+    kguiaddons
+    ki18n
+    kiconthemes
+    kio
+    kitemmodels
+    kitemviews
+    kjobwidgets
+    knewstuff
+    knotifications
+    knotifyconfig
+    kpackage
+    kparts
+    krunner
+    kservice
+    ktextwidgets
+    kunitconversion
+    kwidgetsaddons
+    kwindowsystem
+    kxmlgui
+    solid
+    sonnet
+    breeze
+    libksysguard
+    libplasma
+    plasma-activities
+    plasma-activities-stats
     plasma-workspace
+    powerdevil
+    systemsettings
+    plasma-integration
+    kded
+    qqc2-desktop-style
+    kactivitymanagerd
+)
+kde_project(
+  kde/workspace/plasma-browser-integration
+  DEPENDS
+    extra-cmake-modules
+    kconfig
+    kcoreaddons
+    kcrash
+    kdbusaddons
+    kfilemetadata
+    ki18n
+    kio
+    kjobwidgets
+    knotifications
+    krunner
+    kservice
+    kstatusnotifieritem
+    purpose
+    plasma-activities
+    plasma-workspace
+)
+kde_project(
+  kde/workspace/plasma-bigscreen
+  DEPENDS
+    kauth
+    kcmutils
+    kcodecs
+    kcompletion
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    ki18n
+    kio
+    kjobwidgets
+    knotifications
+    kpackage
+    kservice
+    ksvg
+    kwidgetsaddons
+    kwindowsystem
+    solid
+    kwayland
+    libplasma
+    plasma-activities
+    plasma-activities-stats
+    plasma-workspace
+    plasma5support
+)
+kde_project(
+  kde/workspace/plank-player
+  DEPENDS
+    kcmutils
+    kcodecs
+    kcompletion
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kdeclarative
+    ki18n
+    kio
+    kjobwidgets
+    knotifications
+    kservice
+    kwidgetsaddons
+    kwindowsystem
+    solid
+    libplasma
+    plasma-workspace
+)
+kde_project(
+  kde/workspace/oxygen-sounds
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  kde/workspace/oxygen
+  DEPENDS
+    extra-cmake-modules
+    frameworkintegration
+    kcmutils
+    kcodecs
+    kcompletion
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kguiaddons
+    ki18n
+    kservice
+    kwidgetsaddons
+    kwindowsystem
+    kdecoration
+    libplasma
+)
+kde_project(
+  kde/workspace/ocean-sound-theme
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  kde/workspace/kwrited
+  DEPENDS
+    extra-cmake-modules
+    kcoreaddons
+    kdbusaddons
+    ki18n
+    knotifications
+    kpty
+)
+kde_project(
+  kde/workspace/kwallet-pam
+  DEPENDS
+    extra-cmake-modules
+    kwallet
+)
+kde_project(
+  kde/workspace/ksystemstats
+  DEPENDS
+    extra-cmake-modules
+    kcoreaddons
+    kio
+    solid
+    libksysguard
+)
+kde_project(
+  kde/workspace/ksshaskpass
+  DEPENDS
+    extra-cmake-modules
+    kcoreaddons
+    kdoctools
+    ki18n
+    kwallet
+    kwidgetsaddons
+)
+kde_project(
+  kde/workspace/kscreen
+  DEPENDS
+    extra-cmake-modules
+    kauth
+    kcmutils
+    kcodecs
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kdbusaddons
+    ki18n
+    kpackage
+    kservice
+    ksvg
+    kwidgetsaddons
+    kwindowsystem
+    kxmlgui
+    layer-shell-qt
+    libkscreen
+    libplasma
+)
+kde_project(
+  kde/workspace/kmenuedit
+  DEPENDS
+    extra-cmake-modules
+    kdbusaddons
+    kdoctools
+    kglobalaccel
+    ki18n
+    kiconthemes
+    kio
+    kitemviews
+    kwindowsystem
+    kxmlgui
+    sonnet
 )
 kde_project(
   kde/workspace/kinfocenter
   DEPENDS
-    ${KF5UMBRELLA_DEPS}
     extra-cmake-modules
+    kauth
+    kcmutils
+    kcodecs
+    kcompletion
+    kconfig
+    kcoreaddons
+    ki18n
+    kio
+    kjobwidgets
+    kservice
+    kwidgetsaddons
+    kwindowsystem
+    solid
+    plasma-systemmonitor
     systemsettings
+    xdg-desktop-portal-kde
+)
+kde_project(
+  kde/workspace/kgamma
+  DEPENDS
+    extra-cmake-modules
+    kcmutils
+    kconfig
+    kconfigwidgets
+    kdoctools
+    ki18n
+)
+kde_project(
+  kde/workspace/kdeplasma-addons
+  DEPENDS
+    attica
+    extra-cmake-modules
+    kauth
+    kcmutils
+    kcodecs
+    kcompletion
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kglobalaccel
+    kholidays
+    ki18n
+    kio
+    kjobwidgets
+    knewstuff
+    knotifications
+    kpackage
+    krunner
+    kservice
+    kunitconversion
+    kwidgetsaddons
+    kxmlgui
+    solid
+    sonnet
+    libplasma
+    plasma-workspace
+    plasma5support
+    plasma-nano
+)
+kde_project(
+  kde/workspace/kde-gtk-config
+  DEPENDS
+    extra-cmake-modules
+    kauth
+    kcodecs
+    kcolorscheme
+    kconfig
+    kcoreaddons
+    kdbusaddons
+    kguiaddons
+    kwidgetsaddons
+    kwindowsystem
+    kdecoration
+)
+kde_project(
+  kde/workspace/kde-cli-tools
+  DEPENDS
+    extra-cmake-modules
+    kauth
+    kcmutils
+    kcodecs
+    kcompletion
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kdesu
+    ki18n
+    kiconthemes
+    kio
+    kjobwidgets
+    kparts
+    kpty
+    kservice
+    kwidgetsaddons
+    kwindowsystem
+    solid
+)
+kde_project(
+  kde/workspace/flatpak-kcm
+  DEPENDS
+    extra-cmake-modules
+    kcmutils
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    ki18n
+    kitemmodels
+)
+kde_project(
+  kde/workspace/drkonqi
+  DEPENDS
+    extra-cmake-modules
+    kauth
+    kcmutils
+    kcodecs
+    kconfig
+    kcoreaddons
+    kcrash
+    ki18n
+    kidletime
+    kio
+    kitemmodels
+    kjobwidgets
+    knotifications
+    kservice
+    kstatusnotifieritem
+    kwallet
+    kwidgetsaddons
+    kwindowsystem
+    solid
+    syntax-highlighting
 )
 kde_project(
   kde/workspace/discover
   DEPENDS
-    ${KF5UMBRELLA_DEPS}
+    attica
+    extra-cmake-modules
+    karchive
+    kauth
+    kcmutils
+    kcodecs
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kcrash
+    kdbusaddons
+    ki18n
+    kidletime
+    kio
+    knewstuff
+    knotifications
+    kservice
+    kstatusnotifieritem
+    kuserfeedback
+    kwidgetsaddons
+    kwindowsystem
+    kxmlgui
+    purpose
+)
+kde_project(
+  kde/workspace/breeze-plymouth
+  DEPENDS
     extra-cmake-modules
 )
 kde_project(
   kde/workspace/breeze-gtk
   DEPENDS
-    ${KF5UMBRELLA_DEPS}
     extra-cmake-modules
     breeze
 )
 kde_project(
-  kde/workspace/plasma-tests
+  kde/workspace/aura-browser
   DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-    plasma-workspace
-    plasma-desktop
-)
-kde_project(
-  kde/workspace/kdeplasma-addons
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-    kross
-    plasma-workspace
-)
-kde_project(
-  kde/workspace/kscreen
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-    libkscreen
-)
-kde_project(
-  kde/workspace/kde-gtk-config
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-    kdecoration
-)
-kde_project(
-  kde/workspace/polkit-kde-agent-1
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-)
-kde_project(
-  kde/workspace/plasma-nm
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-    modemmanager-qt
-)
-kde_project(
-  kde/workspace/plasma-phone-components
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-    kwin
-)
-kde_project(
-  kde/workspace/plasma-browser-integration
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
+    kcmutils
+    kcodecs
+    kcompletion
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    kdeclarative
+    ki18n
+    kio
+    kjobwidgets
+    knotifications
+    kpackage
+    kservice
+    kwidgetsaddons
+    kwindowsystem
+    solid
+    libplasma
     plasma-workspace
 )
 kde_project(
-  kde/workspace/plasma-integration
+  kde/workspace/plasma-remotecontrollers
   DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-    breeze
-)
-kde_project(
-  kde/workspace/plasma-systemmonitor
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-    libksysguard
-)
-kde_project(
-  kde/workspace/ksystemstats
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-    libksysguard
-)
-kde_project(
-  kde/workspace/kmenuedit
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
+    kcmutils
+    kcodecs
+    kcompletion
+    kconfig
+    kconfigwidgets
+    kcoreaddons
+    ki18n
+    kio
+    kjobwidgets
+    knotifications
+    kpackage
+    kservice
+    kstatusnotifieritem
+    kwidgetsaddons
+    kwindowsystem
+    solid
+    libplasma
     plasma-workspace
 )
 kde_project(
-  kde/workspace/khotkeys
+  frameworks/kapidox
   DEPENDS
-    ${KF5UMBRELLA_DEPS}
     extra-cmake-modules
-    plasma-workspace
-)
-kde_project(
-  kde/workspace/kde-cli-tools
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-    plasma-workspace
-)
-kde_project(
-  kde/workspace/plasma-vault
-  DEPENDS
-    ${KF5UMBRELLA_DEPS}
-    extra-cmake-modules
-    libksysguard
 )

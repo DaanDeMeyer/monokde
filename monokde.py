@@ -8,8 +8,10 @@ import ast
 import yaml
 import json
 
+
 def run(args) -> subprocess.CompletedProcess:
     return subprocess.run(args, check=True)
+
 
 def is_included(path: str):
     includes = ["frameworks", "kdesupport/plasma-wayland-protocols", "kde/workspace"]
@@ -20,24 +22,12 @@ def is_included(path: str):
 
     return False
 
-async def gather_with_concurrency(n, *tasks):
-    semaphore = asyncio.Semaphore(n)
 
-    async def sem_task(task):
-        async with semaphore:
-            return await task
-    return await asyncio.gather(*(sem_task(task) for task in tasks))
-
-async def clone_project(repopath, projectpath) -> int:
-    os.makedirs(projectpath, exist_ok=True)
+async def add_submodule(repopath, projectpath) -> int:
     if os.path.exists(f"{projectpath}/.git"):
         return 0
 
-    git = await asyncio.create_subprocess_exec("git", "clone", repopath, projectpath)
-    return await git.wait()
-
-async def update_project(projectpath) -> int:
-    git = await asyncio.create_subprocess_shell("git pull origin master:master | grep -v \"Already up to date.\"", cwd=projectpath)
+    git = await asyncio.create_subprocess_exec("git", "submodule", "add", "--branch", "master", repopath, projectpath)
     return await git.wait()
 
 
@@ -54,33 +44,15 @@ def gen_yaml(path: str = "src/sysadmin/repo-metadata/projects-invent"):
             else:
                 pass
 
+
 def clone(args):
-    os.makedirs("src/sysadmin/repo-metadata", exist_ok=True)
-
     if not os.path.exists("src/sysadmin/repo-metadata/.git"):
-        run(["git", "clone", "git@invent.kde.org:sysadmin/repo-metadata.git", "src/sysadmin/repo-metadata"])
-
-    tasks = []
+        run(["git", "submodule", "add", "--force", "--branch", "master", "https://invent.kde.org/sysadmin/repo-metadata.git", "src/sysadmin/repo-metadata"])
 
     for project in gen_yaml():
-        repopath = f"git@invent.kde.org:{project['repopath']}"
+        repopath = f"https://invent.kde.org/{project['repopath']}"
         projectpath = os.path.join("src", project["projectpath"])
-        tasks.append(clone_project(repopath, projectpath))
-
-    asyncio.run(gather_with_concurrency(args.concurrency, *tasks))
-
-def update(args):
-    if not os.path.exists("src/sysadmin/repo-metadata/.git"):
-        print("Run clone first")
-        return
-
-    tasks = []
-
-    for project in gen_yaml():
-        projectpath = os.path.join("src", project["projectpath"])
-        tasks.append(update_project(projectpath))
-
-    asyncio.run(gather_with_concurrency(args.concurrency, *tasks))
+        run(["git", "submodule", "add", "--force", "--branch", "master", repopath, projectpath])
 
 
 def gen_vscode(args):
@@ -101,16 +73,16 @@ def gen_cmake(args):
     list_deps_tool = f"{deps_path}/tools/list_dependencies"
 
     order = subprocess.run(
-        [build_order_tool, f"{deps_path}/dependency-data-kf5-qt5"],
+        [build_order_tool, f"{deps_path}/dependency-data-kf6-qt6"],
         check=True,
-        capture_output=True,
+        stdout=subprocess.PIPE,
         text=True,
     )
     order = ast.literal_eval(order.stdout.strip())
     order = [o for o in order if is_included(o)]
 
     with open("projects.cmake", "w") as f:
-        f.write("# GENERATED CODE! Run tools/gen.py --cmake to regenerate.\n\n")
+        f.write("# GENERATED CODE! Run monokde.py --cmake to regenerate.\n\n")
 
         for project in order:
             deps = subprocess.run(
@@ -121,6 +93,8 @@ def gen_cmake(args):
                     deps_path,
                     "-f",
                     f"{project}",
+                    "--branch-group",
+                    "kf6-qt6",
                 ],
                 capture_output=True,
                 check=True,
@@ -165,10 +139,7 @@ def main():
 
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    c = subparsers.add_parser("clone")
-    c.add_argument("-j", dest="concurrency", type=int, default=1)
-    u = subparsers.add_parser("update")
-    u.add_argument("-j", dest="concurrency", type=int, default=1)
+    subparsers.add_parser("clone")
     subparsers.add_parser("vscode")
     subparsers.add_parser("cmake")
 
@@ -176,7 +147,6 @@ def main():
 
     {
         "clone": clone,
-        "update": update,
         "vscode": gen_vscode,
         "cmake": gen_cmake,
     }[args.command](args)
