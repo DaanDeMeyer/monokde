@@ -313,6 +313,9 @@
             "path": "src/kde/workspace/ksysguard"
         },
         {
+            "path": "src/kde/workspace/ksystemstats"
+        },
+        {
             "path": "src/kde/workspace/kwallet-pam"
         },
         {
@@ -326,6 +329,9 @@
         },
         {
             "path": "src/kde/workspace/kwrited"
+        },
+        {
+            "path": "src/kde/workspace/layer-shell-qt"
         },
         {
             "path": "src/kde/workspace/libkscreen"
@@ -347,6 +353,9 @@
         },
         {
             "path": "src/kde/workspace/plasma-disks"
+        },
+        {
+            "path": "src/kde/workspace/plasma-firewall"
         },
         {
             "path": "src/kde/workspace/plasma-integration"
@@ -394,13 +403,13 @@
             "path": "src/kde/workspace/powerdevil"
         },
         {
+            "path": "src/kde/workspace/qqc2-breeze-style"
+        },
+        {
             "path": "src/kde/workspace/sddm-kcm"
         },
         {
             "path": "src/kde/workspace/systemsettings"
-        },
-        {
-            "path": "src/kde/workspace/user-manager"
         },
         {
             "path": "src/kde/workspace/xdg-desktop-portal-kde"

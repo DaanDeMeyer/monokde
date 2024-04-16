@@ -7,7 +7,7 @@ ln -s "$DESTDIR/usr/share/kf5/kdoctools" /usr/share/kf5/kdoctools
 # Work around "Could not find kdedmodule.desktop" error.
 ln -s "$DESTDIR/usr/share/kservicetypes5" /usr/share/kservicetypes5
 
-if [ ! -f "$BUILDDIR"/kde/build.ninja ] ; then
+if [ ! -f "$BUILDDIR"/build.ninja ] ; then
     cmake -B "$BUILDDIR" -S "$SRCDIR" -G Ninja
 fi
 

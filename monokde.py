@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 import os
 import sys
-import xml.etree.ElementTree as ET
+import asyncio
 import subprocess
 import argparse
 import ast
 import yaml
 import json
 
+def run(args) -> subprocess.CompletedProcess:
+    return subprocess.run(args, check=True)
 
 def is_included(path: str):
     includes = ["frameworks", "kdesupport/plasma-wayland-protocols", "kde/workspace"]
@@ -17,6 +19,26 @@ def is_included(path: str):
             return True
 
     return False
+
+async def gather_with_concurrency(n, *tasks):
+    semaphore = asyncio.Semaphore(n)
+
+    async def sem_task(task):
+        async with semaphore:
+            return await task
+    return await asyncio.gather(*(sem_task(task) for task in tasks))
+
+async def clone_project(repopath, projectpath) -> int:
+    os.makedirs(projectpath, exist_ok=True)
+    if os.path.exists(f"{projectpath}/.git"):
+        return 0
+
+    git = await asyncio.create_subprocess_exec("git", "clone", repopath, projectpath)
+    return await git.wait()
+
+async def update_project(projectpath) -> int:
+    git = await asyncio.create_subprocess_shell("git pull origin master:master | grep -v \"Already up to date.\"", cwd=projectpath)
+    return await git.wait()
 
 
 def gen_yaml(path: str = "src/sysadmin/repo-metadata/projects-invent"):
@@ -32,34 +54,36 @@ def gen_yaml(path: str = "src/sysadmin/repo-metadata/projects-invent"):
             else:
                 pass
 
+def clone(args):
+    os.makedirs("src/sysadmin/repo-metadata", exist_ok=True)
 
-def gen_repo():
-    root = ET.Element("manifest")
-    tree = ET.ElementTree(root)
-    ET.SubElement(
-        root, "remote", {"name": "kitware", "fetch": "ssh://git@gitlab.kitware.com"}
-    )
-    ET.SubElement(root, "remote", {"name": "kde", "fetch": "ssh://git@invent.kde.org"})
-    ET.SubElement(root, "default", {"revision": "refs/heads/master", "remote": "kde"})
-    ET.SubElement(
-        root,
-        "project",
-        {"name": "sysadmin/repo-metadata", "path": "src/sysadmin/repo-metadata"},
-    )
+    if not os.path.exists("src/sysadmin/repo-metadata/.git"):
+        run(["git", "clone", "git@invent.kde.org:sysadmin/repo-metadata.git", "src/sysadmin/repo-metadata"])
+
+    tasks = []
 
     for project in gen_yaml():
-        name = project["repopath"]
-        path = os.path.join("src", project["projectpath"])
-        ET.SubElement(root, "project", {"name": name, "path": path})
+        repopath = f"git@invent.kde.org:{project['repopath']}"
+        projectpath = os.path.join("src", project["projectpath"])
+        tasks.append(clone_project(repopath, projectpath))
 
-    tree.write("default.xml", encoding="utf-8")
+    asyncio.run(gather_with_concurrency(args.concurrency, *tasks))
 
-    subprocess.run(
-        ["xmllint", "--format", "default.xml", "--output", "default.xml"], check=True
-    )
+def update(args):
+    if not os.path.exists("src/sysadmin/repo-metadata/.git"):
+        print("Run clone first")
+        return
+
+    tasks = []
+
+    for project in gen_yaml():
+        projectpath = os.path.join("src", project["projectpath"])
+        tasks.append(update_project(projectpath))
+
+    asyncio.run(gather_with_concurrency(args.concurrency, *tasks))
 
 
-def gen_vscode():
+def gen_vscode(args):
     workspace = {"folders": [], "settings": {"git.ignoredRepositories": [".."]}}
 
     for project in gen_yaml():
@@ -71,7 +95,7 @@ def gen_vscode():
         f.write(json.dumps(workspace, indent=4))
 
 
-def gen_cmake():
+def gen_cmake(args):
     deps_path = "src/sysadmin/repo-metadata/dependencies"
     build_order_tool = f"{deps_path}/tools/build_order"
     list_deps_tool = f"{deps_path}/tools/list_dependencies"
@@ -139,20 +163,23 @@ kde_project(
 def main():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--repo", action="store_true")
-    parser.add_argument("--vscode", action="store_true")
-    parser.add_argument("--cmake", action="store_true")
+    subparsers = parser.add_subparsers(dest="command", required=True)
+
+    c = subparsers.add_parser("clone")
+    c.add_argument("-j", dest="concurrency", type=int, default=1)
+    u = subparsers.add_parser("update")
+    u.add_argument("-j", dest="concurrency", type=int, default=1)
+    subparsers.add_parser("vscode")
+    subparsers.add_parser("cmake")
 
     args = parser.parse_args(sys.argv[1:])
 
-    if args.repo:
-        gen_repo()
-
-    if args.vscode:
-        gen_vscode()
-
-    if args.cmake:
-        gen_cmake()
+    {
+        "clone": clone,
+        "update": update,
+        "vscode": gen_vscode,
+        "cmake": gen_cmake,
+    }[args.command](args)
 
 
 if __name__ == "__main__":
