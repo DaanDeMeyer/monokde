@@ -50,7 +50,7 @@ def clone(args):
         run(["git", "submodule", "add", "--force", "--branch", "master", "https://invent.kde.org/sysadmin/repo-metadata.git", "src/sysadmin/repo-metadata"])
 
     for project in gen_yaml():
-        repopath = f"https://invent.kde.org/{project['repopath']}"
+        repopath = f"https://invent.kde.org/{project['repopath']}.git"
         projectpath = os.path.join("src", project["projectpath"])
         run(["git", "submodule", "add", "--force", "--branch", "master", repopath, projectpath])
 

@@ -4,621 +4,621 @@
 	branch = master
 [submodule "src/frameworks/attica"]
 	path = src/frameworks/attica
-	url = https://invent.kde.org/frameworks/attica
+	url = https://invent.kde.org/frameworks/attica.git
 	branch = master
 [submodule "src/frameworks/baloo"]
 	path = src/frameworks/baloo
-	url = https://invent.kde.org/frameworks/baloo
+	url = https://invent.kde.org/frameworks/baloo.git
 	branch = master
 [submodule "src/frameworks/bluez-qt"]
 	path = src/frameworks/bluez-qt
-	url = https://invent.kde.org/frameworks/bluez-qt
+	url = https://invent.kde.org/frameworks/bluez-qt.git
 	branch = master
 [submodule "src/frameworks/breeze-icons"]
 	path = src/frameworks/breeze-icons
-	url = https://invent.kde.org/frameworks/breeze-icons
+	url = https://invent.kde.org/frameworks/breeze-icons.git
 	branch = master
 [submodule "src/frameworks/extra-cmake-modules"]
 	path = src/frameworks/extra-cmake-modules
-	url = https://invent.kde.org/frameworks/extra-cmake-modules
+	url = https://invent.kde.org/frameworks/extra-cmake-modules.git
 	branch = master
 [submodule "src/frameworks/frameworkintegration"]
 	path = src/frameworks/frameworkintegration
-	url = https://invent.kde.org/frameworks/frameworkintegration
+	url = https://invent.kde.org/frameworks/frameworkintegration.git
 	branch = master
 [submodule "src/frameworks/kapidox"]
 	path = src/frameworks/kapidox
-	url = https://invent.kde.org/frameworks/kapidox
+	url = https://invent.kde.org/frameworks/kapidox.git
 	branch = master
 [submodule "src/frameworks/karchive"]
 	path = src/frameworks/karchive
-	url = https://invent.kde.org/frameworks/karchive
+	url = https://invent.kde.org/frameworks/karchive.git
 	branch = master
 [submodule "src/frameworks/kauth"]
 	path = src/frameworks/kauth
-	url = https://invent.kde.org/frameworks/kauth
+	url = https://invent.kde.org/frameworks/kauth.git
 	branch = master
 [submodule "src/frameworks/kbookmarks"]
 	path = src/frameworks/kbookmarks
-	url = https://invent.kde.org/frameworks/kbookmarks
+	url = https://invent.kde.org/frameworks/kbookmarks.git
 	branch = master
 [submodule "src/frameworks/kcalendarcore"]
 	path = src/frameworks/kcalendarcore
-	url = https://invent.kde.org/frameworks/kcalendarcore
+	url = https://invent.kde.org/frameworks/kcalendarcore.git
 	branch = master
 [submodule "src/frameworks/kcmutils"]
 	path = src/frameworks/kcmutils
-	url = https://invent.kde.org/frameworks/kcmutils
+	url = https://invent.kde.org/frameworks/kcmutils.git
 	branch = master
 [submodule "src/frameworks/kcodecs"]
 	path = src/frameworks/kcodecs
-	url = https://invent.kde.org/frameworks/kcodecs
+	url = https://invent.kde.org/frameworks/kcodecs.git
 	branch = master
 [submodule "src/frameworks/kcolorscheme"]
 	path = src/frameworks/kcolorscheme
-	url = https://invent.kde.org/frameworks/kcolorscheme
+	url = https://invent.kde.org/frameworks/kcolorscheme.git
 	branch = master
 [submodule "src/frameworks/kcompletion"]
 	path = src/frameworks/kcompletion
-	url = https://invent.kde.org/frameworks/kcompletion
+	url = https://invent.kde.org/frameworks/kcompletion.git
 	branch = master
 [submodule "src/frameworks/kconfig"]
 	path = src/frameworks/kconfig
-	url = https://invent.kde.org/frameworks/kconfig
+	url = https://invent.kde.org/frameworks/kconfig.git
 	branch = master
 [submodule "src/frameworks/kconfigwidgets"]
 	path = src/frameworks/kconfigwidgets
-	url = https://invent.kde.org/frameworks/kconfigwidgets
+	url = https://invent.kde.org/frameworks/kconfigwidgets.git
 	branch = master
 [submodule "src/frameworks/kcontacts"]
 	path = src/frameworks/kcontacts
-	url = https://invent.kde.org/frameworks/kcontacts
+	url = https://invent.kde.org/frameworks/kcontacts.git
 	branch = master
 [submodule "src/frameworks/kcoreaddons"]
 	path = src/frameworks/kcoreaddons
-	url = https://invent.kde.org/frameworks/kcoreaddons
+	url = https://invent.kde.org/frameworks/kcoreaddons.git
 	branch = master
 [submodule "src/frameworks/kcrash"]
 	path = src/frameworks/kcrash
-	url = https://invent.kde.org/frameworks/kcrash
+	url = https://invent.kde.org/frameworks/kcrash.git
 	branch = master
 [submodule "src/frameworks/kdav"]
 	path = src/frameworks/kdav
-	url = https://invent.kde.org/frameworks/kdav
+	url = https://invent.kde.org/frameworks/kdav.git
 	branch = master
 [submodule "src/frameworks/kdbusaddons"]
 	path = src/frameworks/kdbusaddons
-	url = https://invent.kde.org/frameworks/kdbusaddons
+	url = https://invent.kde.org/frameworks/kdbusaddons.git
 	branch = master
 [submodule "src/frameworks/kdeclarative"]
 	path = src/frameworks/kdeclarative
-	url = https://invent.kde.org/frameworks/kdeclarative
+	url = https://invent.kde.org/frameworks/kdeclarative.git
 	branch = master
 [submodule "src/frameworks/kded"]
 	path = src/frameworks/kded
-	url = https://invent.kde.org/frameworks/kded
+	url = https://invent.kde.org/frameworks/kded.git
 	branch = master
 [submodule "src/frameworks/kdelibs4support"]
 	path = src/frameworks/kdelibs4support
-	url = https://invent.kde.org/frameworks/kdelibs4support
+	url = https://invent.kde.org/frameworks/kdelibs4support.git
 	branch = master
 [submodule "src/frameworks/kdesignerplugin"]
 	path = src/frameworks/kdesignerplugin
-	url = https://invent.kde.org/frameworks/kdesignerplugin
+	url = https://invent.kde.org/frameworks/kdesignerplugin.git
 	branch = master
 [submodule "src/frameworks/kdesu"]
 	path = src/frameworks/kdesu
-	url = https://invent.kde.org/frameworks/kdesu
+	url = https://invent.kde.org/frameworks/kdesu.git
 	branch = master
 [submodule "src/frameworks/kdewebkit"]
 	path = src/frameworks/kdewebkit
-	url = https://invent.kde.org/frameworks/kdewebkit
+	url = https://invent.kde.org/frameworks/kdewebkit.git
 	branch = master
 [submodule "src/frameworks/kdnssd"]
 	path = src/frameworks/kdnssd
-	url = https://invent.kde.org/frameworks/kdnssd
+	url = https://invent.kde.org/frameworks/kdnssd.git
 	branch = master
 [submodule "src/frameworks/kdoctools"]
 	path = src/frameworks/kdoctools
-	url = https://invent.kde.org/frameworks/kdoctools
+	url = https://invent.kde.org/frameworks/kdoctools.git
 	branch = master
 [submodule "src/frameworks/kemoticons"]
 	path = src/frameworks/kemoticons
-	url = https://invent.kde.org/frameworks/kemoticons
+	url = https://invent.kde.org/frameworks/kemoticons.git
 	branch = master
 [submodule "src/frameworks/kfilemetadata"]
 	path = src/frameworks/kfilemetadata
-	url = https://invent.kde.org/frameworks/kfilemetadata
+	url = https://invent.kde.org/frameworks/kfilemetadata.git
 	branch = master
 [submodule "src/frameworks/kglobalaccel"]
 	path = src/frameworks/kglobalaccel
-	url = https://invent.kde.org/frameworks/kglobalaccel
+	url = https://invent.kde.org/frameworks/kglobalaccel.git
 	branch = master
 [submodule "src/frameworks/kguiaddons"]
 	path = src/frameworks/kguiaddons
-	url = https://invent.kde.org/frameworks/kguiaddons
+	url = https://invent.kde.org/frameworks/kguiaddons.git
 	branch = master
 [submodule "src/frameworks/kholidays"]
 	path = src/frameworks/kholidays
-	url = https://invent.kde.org/frameworks/kholidays
+	url = https://invent.kde.org/frameworks/kholidays.git
 	branch = master
 [submodule "src/frameworks/khtml"]
 	path = src/frameworks/khtml
-	url = https://invent.kde.org/frameworks/khtml
+	url = https://invent.kde.org/frameworks/khtml.git
 	branch = master
 [submodule "src/frameworks/ki18n"]
 	path = src/frameworks/ki18n
-	url = https://invent.kde.org/frameworks/ki18n
+	url = https://invent.kde.org/frameworks/ki18n.git
 	branch = master
 [submodule "src/frameworks/kiconthemes"]
 	path = src/frameworks/kiconthemes
-	url = https://invent.kde.org/frameworks/kiconthemes
+	url = https://invent.kde.org/frameworks/kiconthemes.git
 	branch = master
 [submodule "src/frameworks/kidletime"]
 	path = src/frameworks/kidletime
-	url = https://invent.kde.org/frameworks/kidletime
+	url = https://invent.kde.org/frameworks/kidletime.git
 	branch = master
 [submodule "src/frameworks/kimageformats"]
 	path = src/frameworks/kimageformats
-	url = https://invent.kde.org/frameworks/kimageformats
+	url = https://invent.kde.org/frameworks/kimageformats.git
 	branch = master
 [submodule "src/frameworks/kinit"]
 	path = src/frameworks/kinit
-	url = https://invent.kde.org/frameworks/kinit
+	url = https://invent.kde.org/frameworks/kinit.git
 	branch = master
 [submodule "src/frameworks/kio"]
 	path = src/frameworks/kio
-	url = https://invent.kde.org/frameworks/kio
+	url = https://invent.kde.org/frameworks/kio.git
 	branch = master
 [submodule "src/frameworks/kirigami"]
 	path = src/frameworks/kirigami
-	url = https://invent.kde.org/frameworks/kirigami
+	url = https://invent.kde.org/frameworks/kirigami.git
 	branch = master
 [submodule "src/frameworks/kitemmodels"]
 	path = src/frameworks/kitemmodels
-	url = https://invent.kde.org/frameworks/kitemmodels
+	url = https://invent.kde.org/frameworks/kitemmodels.git
 	branch = master
 [submodule "src/frameworks/kitemviews"]
 	path = src/frameworks/kitemviews
-	url = https://invent.kde.org/frameworks/kitemviews
+	url = https://invent.kde.org/frameworks/kitemviews.git
 	branch = master
 [submodule "src/frameworks/kjobwidgets"]
 	path = src/frameworks/kjobwidgets
-	url = https://invent.kde.org/frameworks/kjobwidgets
+	url = https://invent.kde.org/frameworks/kjobwidgets.git
 	branch = master
 [submodule "src/frameworks/kjs"]
 	path = src/frameworks/kjs
-	url = https://invent.kde.org/frameworks/kjs
+	url = https://invent.kde.org/frameworks/kjs.git
 	branch = master
 [submodule "src/frameworks/kjsembed"]
 	path = src/frameworks/kjsembed
-	url = https://invent.kde.org/frameworks/kjsembed
+	url = https://invent.kde.org/frameworks/kjsembed.git
 	branch = master
 [submodule "src/frameworks/kmediaplayer"]
 	path = src/frameworks/kmediaplayer
-	url = https://invent.kde.org/frameworks/kmediaplayer
+	url = https://invent.kde.org/frameworks/kmediaplayer.git
 	branch = master
 [submodule "src/frameworks/knewstuff"]
 	path = src/frameworks/knewstuff
-	url = https://invent.kde.org/frameworks/knewstuff
+	url = https://invent.kde.org/frameworks/knewstuff.git
 	branch = master
 [submodule "src/frameworks/knotifications"]
 	path = src/frameworks/knotifications
-	url = https://invent.kde.org/frameworks/knotifications
+	url = https://invent.kde.org/frameworks/knotifications.git
 	branch = master
 [submodule "src/frameworks/knotifyconfig"]
 	path = src/frameworks/knotifyconfig
-	url = https://invent.kde.org/frameworks/knotifyconfig
+	url = https://invent.kde.org/frameworks/knotifyconfig.git
 	branch = master
 [submodule "src/frameworks/kpackage"]
 	path = src/frameworks/kpackage
-	url = https://invent.kde.org/frameworks/kpackage
+	url = https://invent.kde.org/frameworks/kpackage.git
 	branch = master
 [submodule "src/frameworks/kparts"]
 	path = src/frameworks/kparts
-	url = https://invent.kde.org/frameworks/kparts
+	url = https://invent.kde.org/frameworks/kparts.git
 	branch = master
 [submodule "src/frameworks/kpeople"]
 	path = src/frameworks/kpeople
-	url = https://invent.kde.org/frameworks/kpeople
+	url = https://invent.kde.org/frameworks/kpeople.git
 	branch = master
 [submodule "src/frameworks/kplotting"]
 	path = src/frameworks/kplotting
-	url = https://invent.kde.org/frameworks/kplotting
+	url = https://invent.kde.org/frameworks/kplotting.git
 	branch = master
 [submodule "src/frameworks/kpty"]
 	path = src/frameworks/kpty
-	url = https://invent.kde.org/frameworks/kpty
+	url = https://invent.kde.org/frameworks/kpty.git
 	branch = master
 [submodule "src/frameworks/kquickcharts"]
 	path = src/frameworks/kquickcharts
-	url = https://invent.kde.org/frameworks/kquickcharts
+	url = https://invent.kde.org/frameworks/kquickcharts.git
 	branch = master
 [submodule "src/frameworks/kross"]
 	path = src/frameworks/kross
-	url = https://invent.kde.org/frameworks/kross
+	url = https://invent.kde.org/frameworks/kross.git
 	branch = master
 [submodule "src/frameworks/krunner"]
 	path = src/frameworks/krunner
-	url = https://invent.kde.org/frameworks/krunner
+	url = https://invent.kde.org/frameworks/krunner.git
 	branch = master
 [submodule "src/frameworks/kservice"]
 	path = src/frameworks/kservice
-	url = https://invent.kde.org/frameworks/kservice
+	url = https://invent.kde.org/frameworks/kservice.git
 	branch = master
 [submodule "src/frameworks/kstatusnotifieritem"]
 	path = src/frameworks/kstatusnotifieritem
-	url = https://invent.kde.org/frameworks/kstatusnotifieritem
+	url = https://invent.kde.org/frameworks/kstatusnotifieritem.git
 	branch = master
 [submodule "src/frameworks/ksvg"]
 	path = src/frameworks/ksvg
-	url = https://invent.kde.org/frameworks/ksvg
+	url = https://invent.kde.org/frameworks/ksvg.git
 	branch = master
 [submodule "src/frameworks/ktexteditor"]
 	path = src/frameworks/ktexteditor
-	url = https://invent.kde.org/frameworks/ktexteditor
+	url = https://invent.kde.org/frameworks/ktexteditor.git
 	branch = master
 [submodule "src/frameworks/ktexttemplate"]
 	path = src/frameworks/ktexttemplate
-	url = https://invent.kde.org/frameworks/ktexttemplate
+	url = https://invent.kde.org/frameworks/ktexttemplate.git
 	branch = master
 [submodule "src/frameworks/ktextwidgets"]
 	path = src/frameworks/ktextwidgets
-	url = https://invent.kde.org/frameworks/ktextwidgets
+	url = https://invent.kde.org/frameworks/ktextwidgets.git
 	branch = master
 [submodule "src/frameworks/kunitconversion"]
 	path = src/frameworks/kunitconversion
-	url = https://invent.kde.org/frameworks/kunitconversion
+	url = https://invent.kde.org/frameworks/kunitconversion.git
 	branch = master
 [submodule "src/frameworks/kuserfeedback"]
 	path = src/frameworks/kuserfeedback
-	url = https://invent.kde.org/frameworks/kuserfeedback
+	url = https://invent.kde.org/frameworks/kuserfeedback.git
 	branch = master
 [submodule "src/frameworks/kwallet"]
 	path = src/frameworks/kwallet
-	url = https://invent.kde.org/frameworks/kwallet
+	url = https://invent.kde.org/frameworks/kwallet.git
 	branch = master
 [submodule "src/frameworks/kwidgetsaddons"]
 	path = src/frameworks/kwidgetsaddons
-	url = https://invent.kde.org/frameworks/kwidgetsaddons
+	url = https://invent.kde.org/frameworks/kwidgetsaddons.git
 	branch = master
 [submodule "src/frameworks/kwindowsystem"]
 	path = src/frameworks/kwindowsystem
-	url = https://invent.kde.org/frameworks/kwindowsystem
+	url = https://invent.kde.org/frameworks/kwindowsystem.git
 	branch = master
 [submodule "src/frameworks/kxmlgui"]
 	path = src/frameworks/kxmlgui
-	url = https://invent.kde.org/frameworks/kxmlgui
+	url = https://invent.kde.org/frameworks/kxmlgui.git
 	branch = master
 [submodule "src/frameworks/kxmlrpcclient"]
 	path = src/frameworks/kxmlrpcclient
-	url = https://invent.kde.org/frameworks/kxmlrpcclient
+	url = https://invent.kde.org/frameworks/kxmlrpcclient.git
 	branch = master
 [submodule "src/frameworks/modemmanager-qt"]
 	path = src/frameworks/modemmanager-qt
-	url = https://invent.kde.org/frameworks/modemmanager-qt
+	url = https://invent.kde.org/frameworks/modemmanager-qt.git
 	branch = master
 [submodule "src/frameworks/networkmanager-qt"]
 	path = src/frameworks/networkmanager-qt
-	url = https://invent.kde.org/frameworks/networkmanager-qt
+	url = https://invent.kde.org/frameworks/networkmanager-qt.git
 	branch = master
 [submodule "src/frameworks/oxygen-icons"]
 	path = src/frameworks/oxygen-icons
-	url = https://invent.kde.org/frameworks/oxygen-icons
+	url = https://invent.kde.org/frameworks/oxygen-icons.git
 	branch = master
 [submodule "src/frameworks/prison"]
 	path = src/frameworks/prison
-	url = https://invent.kde.org/frameworks/prison
+	url = https://invent.kde.org/frameworks/prison.git
 	branch = master
 [submodule "src/frameworks/purpose"]
 	path = src/frameworks/purpose
-	url = https://invent.kde.org/frameworks/purpose
+	url = https://invent.kde.org/frameworks/purpose.git
 	branch = master
 [submodule "src/frameworks/qqc2-desktop-style"]
 	path = src/frameworks/qqc2-desktop-style
-	url = https://invent.kde.org/frameworks/qqc2-desktop-style
+	url = https://invent.kde.org/frameworks/qqc2-desktop-style.git
 	branch = master
 [submodule "src/frameworks/solid"]
 	path = src/frameworks/solid
-	url = https://invent.kde.org/frameworks/solid
+	url = https://invent.kde.org/frameworks/solid.git
 	branch = master
 [submodule "src/frameworks/sonnet"]
 	path = src/frameworks/sonnet
-	url = https://invent.kde.org/frameworks/sonnet
+	url = https://invent.kde.org/frameworks/sonnet.git
 	branch = master
 [submodule "src/frameworks/syndication"]
 	path = src/frameworks/syndication
-	url = https://invent.kde.org/frameworks/syndication
+	url = https://invent.kde.org/frameworks/syndication.git
 	branch = master
 [submodule "src/frameworks/syntax-highlighting"]
 	path = src/frameworks/syntax-highlighting
-	url = https://invent.kde.org/frameworks/syntax-highlighting
+	url = https://invent.kde.org/frameworks/syntax-highlighting.git
 	branch = master
 [submodule "src/frameworks/threadweaver"]
 	path = src/frameworks/threadweaver
-	url = https://invent.kde.org/frameworks/threadweaver
+	url = https://invent.kde.org/frameworks/threadweaver.git
 	branch = master
 [submodule "src/kdesupport/plasma-wayland-protocols"]
 	path = src/kdesupport/plasma-wayland-protocols
-	url = https://invent.kde.org/libraries/plasma-wayland-protocols
+	url = https://invent.kde.org/libraries/plasma-wayland-protocols.git
 	branch = master
 [submodule "src/kde/workspace/plasma-remotecontrollers"]
 	path = src/kde/workspace/plasma-remotecontrollers
-	url = https://invent.kde.org/plasma-bigscreen/plasma-remotecontrollers
+	url = https://invent.kde.org/plasma-bigscreen/plasma-remotecontrollers.git
 	branch = master
 [submodule "src/kde/workspace/aura-browser"]
 	path = src/kde/workspace/aura-browser
-	url = https://invent.kde.org/plasma/aura-browser
+	url = https://invent.kde.org/plasma/aura-browser.git
 	branch = master
 [submodule "src/kde/workspace/bluedevil"]
 	path = src/kde/workspace/bluedevil
-	url = https://invent.kde.org/plasma/bluedevil
+	url = https://invent.kde.org/plasma/bluedevil.git
 	branch = master
 [submodule "src/kde/workspace/breeze-grub"]
 	path = src/kde/workspace/breeze-grub
-	url = https://invent.kde.org/plasma/breeze-grub
+	url = https://invent.kde.org/plasma/breeze-grub.git
 	branch = master
 [submodule "src/kde/workspace/breeze-gtk"]
 	path = src/kde/workspace/breeze-gtk
-	url = https://invent.kde.org/plasma/breeze-gtk
+	url = https://invent.kde.org/plasma/breeze-gtk.git
 	branch = master
 [submodule "src/kde/workspace/breeze-plymouth"]
 	path = src/kde/workspace/breeze-plymouth
-	url = https://invent.kde.org/plasma/breeze-plymouth
+	url = https://invent.kde.org/plasma/breeze-plymouth.git
 	branch = master
 [submodule "src/kde/workspace/breeze"]
 	path = src/kde/workspace/breeze
-	url = https://invent.kde.org/plasma/breeze
+	url = https://invent.kde.org/plasma/breeze.git
 	branch = master
 [submodule "src/kde/workspace/discover"]
 	path = src/kde/workspace/discover
-	url = https://invent.kde.org/plasma/discover
+	url = https://invent.kde.org/plasma/discover.git
 	branch = master
 [submodule "src/kde/workspace/drkonqi"]
 	path = src/kde/workspace/drkonqi
-	url = https://invent.kde.org/plasma/drkonqi
+	url = https://invent.kde.org/plasma/drkonqi.git
 	branch = master
 [submodule "src/kde/workspace/flatpak-kcm"]
 	path = src/kde/workspace/flatpak-kcm
-	url = https://invent.kde.org/plasma/flatpak-kcm
+	url = https://invent.kde.org/plasma/flatpak-kcm.git
 	branch = master
 [submodule "src/kde/workspace/kactivitymanagerd"]
 	path = src/kde/workspace/kactivitymanagerd
-	url = https://invent.kde.org/plasma/kactivitymanagerd
+	url = https://invent.kde.org/plasma/kactivitymanagerd.git
 	branch = master
 [submodule "src/kde/workspace/kde-cli-tools"]
 	path = src/kde/workspace/kde-cli-tools
-	url = https://invent.kde.org/plasma/kde-cli-tools
+	url = https://invent.kde.org/plasma/kde-cli-tools.git
 	branch = master
 [submodule "src/kde/workspace/kde-gtk-config"]
 	path = src/kde/workspace/kde-gtk-config
-	url = https://invent.kde.org/plasma/kde-gtk-config
+	url = https://invent.kde.org/plasma/kde-gtk-config.git
 	branch = master
 [submodule "src/kde/workspace/kdecoration"]
 	path = src/kde/workspace/kdecoration
-	url = https://invent.kde.org/plasma/kdecoration
+	url = https://invent.kde.org/plasma/kdecoration.git
 	branch = master
 [submodule "src/kde/workspace/kdeplasma-addons"]
 	path = src/kde/workspace/kdeplasma-addons
-	url = https://invent.kde.org/plasma/kdeplasma-addons
+	url = https://invent.kde.org/plasma/kdeplasma-addons.git
 	branch = master
 [submodule "src/kde/workspace/kgamma"]
 	path = src/kde/workspace/kgamma
-	url = https://invent.kde.org/plasma/kgamma
+	url = https://invent.kde.org/plasma/kgamma.git
 	branch = master
 [submodule "src/kde/workspace/khotkeys"]
 	path = src/kde/workspace/khotkeys
-	url = https://invent.kde.org/plasma/khotkeys
+	url = https://invent.kde.org/plasma/khotkeys.git
 	branch = master
 [submodule "src/kde/workspace/kinfocenter"]
 	path = src/kde/workspace/kinfocenter
-	url = https://invent.kde.org/plasma/kinfocenter
+	url = https://invent.kde.org/plasma/kinfocenter.git
 	branch = master
 [submodule "src/kde/workspace/kmenuedit"]
 	path = src/kde/workspace/kmenuedit
-	url = https://invent.kde.org/plasma/kmenuedit
+	url = https://invent.kde.org/plasma/kmenuedit.git
 	branch = master
 [submodule "src/kde/workspace/kpipewire"]
 	path = src/kde/workspace/kpipewire
-	url = https://invent.kde.org/plasma/kpipewire
+	url = https://invent.kde.org/plasma/kpipewire.git
 	branch = master
 [submodule "src/kde/workspace/kscreen"]
 	path = src/kde/workspace/kscreen
-	url = https://invent.kde.org/plasma/kscreen
+	url = https://invent.kde.org/plasma/kscreen.git
 	branch = master
 [submodule "src/kde/workspace/kscreenlocker"]
 	path = src/kde/workspace/kscreenlocker
-	url = https://invent.kde.org/plasma/kscreenlocker
+	url = https://invent.kde.org/plasma/kscreenlocker.git
 	branch = master
 [submodule "src/kde/workspace/ksshaskpass"]
 	path = src/kde/workspace/ksshaskpass
-	url = https://invent.kde.org/plasma/ksshaskpass
+	url = https://invent.kde.org/plasma/ksshaskpass.git
 	branch = master
 [submodule "src/kde/workspace/ksysguard"]
 	path = src/kde/workspace/ksysguard
-	url = https://invent.kde.org/plasma/ksysguard
+	url = https://invent.kde.org/plasma/ksysguard.git
 	branch = master
 [submodule "src/kde/workspace/ksystemstats"]
 	path = src/kde/workspace/ksystemstats
-	url = https://invent.kde.org/plasma/ksystemstats
+	url = https://invent.kde.org/plasma/ksystemstats.git
 	branch = master
 [submodule "src/kde/workspace/kwallet-pam"]
 	path = src/kde/workspace/kwallet-pam
-	url = https://invent.kde.org/plasma/kwallet-pam
+	url = https://invent.kde.org/plasma/kwallet-pam.git
 	branch = master
 [submodule "src/kde/workspace/kwayland-integration"]
 	path = src/kde/workspace/kwayland-integration
-	url = https://invent.kde.org/plasma/kwayland-integration
+	url = https://invent.kde.org/plasma/kwayland-integration.git
 	branch = master
 [submodule "src/kde/workspace/kwayland-server"]
 	path = src/kde/workspace/kwayland-server
-	url = https://invent.kde.org/plasma/kwayland-server
+	url = https://invent.kde.org/plasma/kwayland-server.git
 	branch = master
 [submodule "src/kde/workspace/kwayland"]
 	path = src/kde/workspace/kwayland
-	url = https://invent.kde.org/plasma/kwayland
+	url = https://invent.kde.org/plasma/kwayland.git
 	branch = master
 [submodule "src/kde/workspace/kwin"]
 	path = src/kde/workspace/kwin
-	url = https://invent.kde.org/plasma/kwin
+	url = https://invent.kde.org/plasma/kwin.git
 	branch = master
 [submodule "src/kde/workspace/kwrited"]
 	path = src/kde/workspace/kwrited
-	url = https://invent.kde.org/plasma/kwrited
+	url = https://invent.kde.org/plasma/kwrited.git
 	branch = master
 [submodule "src/kde/workspace/layer-shell-qt"]
 	path = src/kde/workspace/layer-shell-qt
-	url = https://invent.kde.org/plasma/layer-shell-qt
+	url = https://invent.kde.org/plasma/layer-shell-qt.git
 	branch = master
 [submodule "src/kde/workspace/libkscreen"]
 	path = src/kde/workspace/libkscreen
-	url = https://invent.kde.org/plasma/libkscreen
+	url = https://invent.kde.org/plasma/libkscreen.git
 	branch = master
 [submodule "src/kde/workspace/libksysguard"]
 	path = src/kde/workspace/libksysguard
-	url = https://invent.kde.org/plasma/libksysguard
+	url = https://invent.kde.org/plasma/libksysguard.git
 	branch = master
 [submodule "src/kde/workspace/libplasma"]
 	path = src/kde/workspace/libplasma
-	url = https://invent.kde.org/plasma/libplasma
+	url = https://invent.kde.org/plasma/libplasma.git
 	branch = master
 [submodule "src/kde/workspace/milou"]
 	path = src/kde/workspace/milou
-	url = https://invent.kde.org/plasma/milou
+	url = https://invent.kde.org/plasma/milou.git
 	branch = master
 [submodule "src/kde/workspace/ocean-sound-theme"]
 	path = src/kde/workspace/ocean-sound-theme
-	url = https://invent.kde.org/plasma/ocean-sound-theme
+	url = https://invent.kde.org/plasma/ocean-sound-theme.git
 	branch = master
 [submodule "src/kde/workspace/oxygen-sounds"]
 	path = src/kde/workspace/oxygen-sounds
-	url = https://invent.kde.org/plasma/oxygen-sounds
+	url = https://invent.kde.org/plasma/oxygen-sounds.git
 	branch = master
 [submodule "src/kde/workspace/oxygen"]
 	path = src/kde/workspace/oxygen
-	url = https://invent.kde.org/plasma/oxygen
+	url = https://invent.kde.org/plasma/oxygen.git
 	branch = master
 [submodule "src/kde/workspace/plank-player"]
 	path = src/kde/workspace/plank-player
-	url = https://invent.kde.org/plasma/plank-player
+	url = https://invent.kde.org/plasma/plank-player.git
 	branch = master
 [submodule "src/kde/workspace/plasma-activities-stats"]
 	path = src/kde/workspace/plasma-activities-stats
-	url = https://invent.kde.org/plasma/plasma-activities-stats
+	url = https://invent.kde.org/plasma/plasma-activities-stats.git
 	branch = master
 [submodule "src/kde/workspace/plasma-activities"]
 	path = src/kde/workspace/plasma-activities
-	url = https://invent.kde.org/plasma/plasma-activities
+	url = https://invent.kde.org/plasma/plasma-activities.git
 	branch = master
 [submodule "src/kde/workspace/plasma-bigscreen"]
 	path = src/kde/workspace/plasma-bigscreen
-	url = https://invent.kde.org/plasma/plasma-bigscreen
+	url = https://invent.kde.org/plasma/plasma-bigscreen.git
 	branch = master
 [submodule "src/kde/workspace/plasma-browser-integration"]
 	path = src/kde/workspace/plasma-browser-integration
-	url = https://invent.kde.org/plasma/plasma-browser-integration
+	url = https://invent.kde.org/plasma/plasma-browser-integration.git
 	branch = master
 [submodule "src/kde/workspace/plasma-desktop"]
 	path = src/kde/workspace/plasma-desktop
-	url = https://invent.kde.org/plasma/plasma-desktop
+	url = https://invent.kde.org/plasma/plasma-desktop.git
 	branch = master
 [submodule "src/kde/workspace/plasma-disks"]
 	path = src/kde/workspace/plasma-disks
-	url = https://invent.kde.org/plasma/plasma-disks
+	url = https://invent.kde.org/plasma/plasma-disks.git
 	branch = master
 [submodule "src/kde/workspace/plasma-firewall"]
 	path = src/kde/workspace/plasma-firewall
-	url = https://invent.kde.org/plasma/plasma-firewall
+	url = https://invent.kde.org/plasma/plasma-firewall.git
 	branch = master
 [submodule "src/kde/workspace/plasma-integration"]
 	path = src/kde/workspace/plasma-integration
-	url = https://invent.kde.org/plasma/plasma-integration
+	url = https://invent.kde.org/plasma/plasma-integration.git
 	branch = master
 [submodule "src/kde/workspace/plasma-mobile"]
 	path = src/kde/workspace/plasma-mobile
-	url = https://invent.kde.org/plasma/plasma-mobile
+	url = https://invent.kde.org/plasma/plasma-mobile.git
 	branch = master
 [submodule "src/kde/workspace/plasma-nano"]
 	path = src/kde/workspace/plasma-nano
-	url = https://invent.kde.org/plasma/plasma-nano
+	url = https://invent.kde.org/plasma/plasma-nano.git
 	branch = master
 [submodule "src/kde/workspace/plasma-nm"]
 	path = src/kde/workspace/plasma-nm
-	url = https://invent.kde.org/plasma/plasma-nm
+	url = https://invent.kde.org/plasma/plasma-nm.git
 	branch = master
 [submodule "src/kde/workspace/plasma-pa"]
 	path = src/kde/workspace/plasma-pa
-	url = https://invent.kde.org/plasma/plasma-pa
+	url = https://invent.kde.org/plasma/plasma-pa.git
 	branch = master
 [submodule "src/kde/workspace/plasma-sdk"]
 	path = src/kde/workspace/plasma-sdk
-	url = https://invent.kde.org/plasma/plasma-sdk
+	url = https://invent.kde.org/plasma/plasma-sdk.git
 	branch = master
 [submodule "src/kde/workspace/plasma-systemmonitor"]
 	path = src/kde/workspace/plasma-systemmonitor
-	url = https://invent.kde.org/plasma/plasma-systemmonitor
+	url = https://invent.kde.org/plasma/plasma-systemmonitor.git
 	branch = master
 [submodule "src/kde/workspace/plasma-tests"]
 	path = src/kde/workspace/plasma-tests
-	url = https://invent.kde.org/plasma/plasma-tests
+	url = https://invent.kde.org/plasma/plasma-tests.git
 	branch = master
 [submodule "src/kde/workspace/plasma-thunderbolt"]
 	path = src/kde/workspace/plasma-thunderbolt
-	url = https://invent.kde.org/plasma/plasma-thunderbolt
+	url = https://invent.kde.org/plasma/plasma-thunderbolt.git
 	branch = master
 [submodule "src/kde/workspace/plasma-vault"]
 	path = src/kde/workspace/plasma-vault
-	url = https://invent.kde.org/plasma/plasma-vault
+	url = https://invent.kde.org/plasma/plasma-vault.git
 	branch = master
 [submodule "src/kde/workspace/plasma-welcome"]
 	path = src/kde/workspace/plasma-welcome
-	url = https://invent.kde.org/plasma/plasma-welcome
+	url = https://invent.kde.org/plasma/plasma-welcome.git
 	branch = master
 [submodule "src/kde/workspace/plasma-workspace-wallpapers"]
 	path = src/kde/workspace/plasma-workspace-wallpapers
-	url = https://invent.kde.org/plasma/plasma-workspace-wallpapers
+	url = https://invent.kde.org/plasma/plasma-workspace-wallpapers.git
 	branch = master
 [submodule "src/kde/workspace/plasma-workspace"]
 	path = src/kde/workspace/plasma-workspace
-	url = https://invent.kde.org/plasma/plasma-workspace
+	url = https://invent.kde.org/plasma/plasma-workspace.git
 	branch = master
 [submodule "src/kde/workspace/plasma5support"]
 	path = src/kde/workspace/plasma5support
-	url = https://invent.kde.org/plasma/plasma5support
+	url = https://invent.kde.org/plasma/plasma5support.git
 	branch = master
 [submodule "src/kde/workspace/plymouth-kcm"]
 	path = src/kde/workspace/plymouth-kcm
-	url = https://invent.kde.org/plasma/plymouth-kcm
+	url = https://invent.kde.org/plasma/plymouth-kcm.git
 	branch = master
 [submodule "src/kde/workspace/polkit-kde-agent-1"]
 	path = src/kde/workspace/polkit-kde-agent-1
-	url = https://invent.kde.org/plasma/polkit-kde-agent-1
+	url = https://invent.kde.org/plasma/polkit-kde-agent-1.git
 	branch = master
 [submodule "src/kde/workspace/powerdevil"]
 	path = src/kde/workspace/powerdevil
-	url = https://invent.kde.org/plasma/powerdevil
+	url = https://invent.kde.org/plasma/powerdevil.git
 	branch = master
 [submodule "src/kde/workspace/print-manager"]
 	path = src/kde/workspace/print-manager
-	url = https://invent.kde.org/plasma/print-manager
+	url = https://invent.kde.org/plasma/print-manager.git
 	branch = master
 [submodule "src/kde/workspace/qqc2-breeze-style"]
 	path = src/kde/workspace/qqc2-breeze-style
-	url = https://invent.kde.org/plasma/qqc2-breeze-style
+	url = https://invent.kde.org/plasma/qqc2-breeze-style.git
 	branch = master
 [submodule "src/kde/workspace/sddm-kcm"]
 	path = src/kde/workspace/sddm-kcm
-	url = https://invent.kde.org/plasma/sddm-kcm
+	url = https://invent.kde.org/plasma/sddm-kcm.git
 	branch = master
 [submodule "src/kde/workspace/systemsettings"]
 	path = src/kde/workspace/systemsettings
-	url = https://invent.kde.org/plasma/systemsettings
+	url = https://invent.kde.org/plasma/systemsettings.git
 	branch = master
 [submodule "src/kde/workspace/wacomtablet"]
 	path = src/kde/workspace/wacomtablet
-	url = https://invent.kde.org/plasma/wacomtablet
+	url = https://invent.kde.org/plasma/wacomtablet.git
 	branch = master
 [submodule "src/kde/workspace/xdg-desktop-portal-kde"]
 	path = src/kde/workspace/xdg-desktop-portal-kde
-	url = https://invent.kde.org/plasma/xdg-desktop-portal-kde
+	url = https://invent.kde.org/plasma/xdg-desktop-portal-kde.git
 	branch = master
