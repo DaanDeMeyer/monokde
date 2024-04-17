@@ -27,6 +27,7 @@ function(kde_project ARG_PATH)
         -DCMAKE_BUILD_TYPE=Release
         -DBUILD_TESTING=OFF
         -DBUILD_QT5=OFF
+        -DWITH_PYTHON_VENDORING=OFF
     BUILD_COMMAND ninja
     BUILD_ALWAYS ON
     LOG_CONFIGURE ON
