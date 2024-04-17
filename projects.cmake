@@ -385,6 +385,13 @@ kde_project(
     extra-cmake-modules
 )
 kde_project(
+  extragear/libs/kirigami-addons
+  DEPENDS
+    extra-cmake-modules
+    ki18n
+    kirigami
+)
+kde_project(
   frameworks/kdeclarative
   DEPENDS
     extra-cmake-modules
@@ -515,6 +522,11 @@ kde_project(
     kdecoration
 )
 kde_project(
+  extragear/libs/libqaccessibilityclient
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
   frameworks/kfilemetadata
   DEPENDS
     extra-cmake-modules
@@ -546,6 +558,7 @@ kde_project(
     kwidgetsaddons
     kwindowsystem
     kxmlgui
+    libqaccessibilityclient
     plasma-wayland-protocols
     breeze
     kdecoration
@@ -767,6 +780,7 @@ kde_project(
     prison
     solid
     sonnet
+    kirigami-addons
     plasma-wayland-protocols
     kpipewire
     kscreenlocker
@@ -785,6 +799,11 @@ kde_project(
     milou
 )
 kde_project(
+  extragear/libs/pulseaudio-qt
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
   frameworks/modemmanager-qt
   DEPENDS
     extra-cmake-modules
@@ -799,6 +818,27 @@ kde_project(
   DEPENDS
     extra-cmake-modules
     kio
+)
+kde_project(
+  extragear/libs/kproperty
+  DEPENDS
+    extra-cmake-modules
+    kconfig
+    kcoreaddons
+    kguiaddons
+    kwidgetsaddons
+)
+kde_project(
+  extragear/libs/kquickimageeditor
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
+  extragear/libs/kweathercore
+  DEPENDS
+    extra-cmake-modules
+    kholidays
+    ki18n
 )
 kde_project(
   kde/workspace/qqc2-breeze-style
@@ -826,6 +866,8 @@ kde_project(
     kpackage
     kstatusnotifieritem
     ksvg
+    kirigami-addons
+    pulseaudio-qt
     libplasma
     plasma-workspace
 )
@@ -1012,6 +1054,7 @@ kde_project(
     kpackage
     kservice
     kwindowsystem
+    kirigami-addons
     libksysguard
     kiconthemes
 )
@@ -1026,9 +1069,31 @@ kde_project(
     kwidgetsaddons
 )
 kde_project(
+  extragear/libs/kreport
+  DEPENDS
+    extra-cmake-modules
+    kconfig
+    kcoreaddons
+    kguiaddons
+    kwidgetsaddons
+    kproperty
+)
+kde_project(
+  extragear/libs/kdb
+  DEPENDS
+    extra-cmake-modules
+    kcoreaddons
+)
+kde_project(
   frameworks/kplotting
   DEPENDS
     extra-cmake-modules
+)
+kde_project(
+  extragear/libs/libmediawiki
+  DEPENDS
+    extra-cmake-modules
+    kcoreaddons
 )
 kde_project(
   frameworks/kimageformats
@@ -1128,6 +1193,7 @@ kde_project(
     knotifications
     ksvg
     kwindowsystem
+    kirigami-addons
     libplasma
 )
 kde_project(
@@ -1215,6 +1281,7 @@ kde_project(
     kwindowsystem
     modemmanager-qt
     networkmanager-qt
+    kirigami-addons
     kwayland
     kwin
     libkscreen
@@ -1293,6 +1360,7 @@ kde_project(
     kxmlgui
     solid
     sonnet
+    kirigami-addons
     breeze
     libksysguard
     libplasma
@@ -1533,6 +1601,7 @@ kde_project(
     kxmlgui
     solid
     sonnet
+    kirigami-addons
     libplasma
     plasma-workspace
     plasma5support
@@ -1637,6 +1706,7 @@ kde_project(
     kwindowsystem
     kxmlgui
     purpose
+    kirigami-addons
 )
 kde_project(
   kde/workspace/breeze-plymouth
@@ -1692,6 +1762,11 @@ kde_project(
     solid
     libplasma
     plasma-workspace
+)
+kde_project(
+  extragear/libs/croutons
+  DEPENDS
+    extra-cmake-modules
 )
 kde_project(
   frameworks/kapidox
