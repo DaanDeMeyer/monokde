@@ -622,3 +622,47 @@
 	path = src/kde/workspace/xdg-desktop-portal-kde
 	url = https://invent.kde.org/plasma/xdg-desktop-portal-kde.git
 	branch = master
+[submodule "src/extragear/libs/croutons"]
+	path = src/extragear/libs/croutons
+	url = https://invent.kde.org/libraries/croutons.git
+	branch = master
+[submodule "src/extragear/libs/kdb"]
+	path = src/extragear/libs/kdb
+	url = https://invent.kde.org/libraries/kdb.git
+	branch = master
+[submodule "src/extragear/libs/kirigami-addons"]
+	path = src/extragear/libs/kirigami-addons
+	url = https://invent.kde.org/libraries/kirigami-addons.git
+	branch = master
+[submodule "src/extragear/libs/kproperty"]
+	path = src/extragear/libs/kproperty
+	url = https://invent.kde.org/libraries/kproperty.git
+	branch = master
+[submodule "src/extragear/libs/kquickimageeditor"]
+	path = src/extragear/libs/kquickimageeditor
+	url = https://invent.kde.org/libraries/kquickimageeditor.git
+	branch = master
+[submodule "src/extragear/libs/kreport"]
+	path = src/extragear/libs/kreport
+	url = https://invent.kde.org/libraries/kreport.git
+	branch = master
+[submodule "src/extragear/libs/kweathercore"]
+	path = src/extragear/libs/kweathercore
+	url = https://invent.kde.org/libraries/kweathercore.git
+	branch = master
+[submodule "src/extragear/libs/libkvkontakte"]
+	path = src/extragear/libs/libkvkontakte
+	url = https://invent.kde.org/libraries/libkvkontakte.git
+	branch = master
+[submodule "src/extragear/libs/libmediawiki"]
+	path = src/extragear/libs/libmediawiki
+	url = https://invent.kde.org/libraries/libmediawiki.git
+	branch = master
+[submodule "src/extragear/libs/libqaccessibilityclient"]
+	path = src/extragear/libs/libqaccessibilityclient
+	url = https://invent.kde.org/libraries/libqaccessibilityclient.git
+	branch = master
+[submodule "src/extragear/libs/pulseaudio-qt"]
+	path = src/extragear/libs/pulseaudio-qt
+	url = https://invent.kde.org/libraries/pulseaudio-qt.git
+	branch = master
