@@ -14,7 +14,13 @@ def run(args) -> subprocess.CompletedProcess:
 
 
 def is_included(path: str):
-    includes = ["frameworks", "kdesupport/plasma-wayland-protocols", "kde/workspace", "extragear/libs/kirigami-addons"]
+    includes = [
+        "frameworks",
+        "kdesupport/plasma-wayland-protocols",
+        "kde/workspace",
+        "extragear/libs/kirigami-addons",
+        "playground/base/kglobalacceld",
+    ]
 
     for i in includes:
         if path.startswith(i):

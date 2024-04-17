@@ -506,6 +506,20 @@ kde_project(
     plasma-wayland-protocols
 )
 kde_project(
+  playground/base/kglobalacceld
+  DEPENDS
+    extra-cmake-modules
+    kconfig
+    kcoreaddons
+    kcrash
+    kdbusaddons
+    kglobalaccel
+    kio
+    kjobwidgets
+    kservice
+    kwindowsystem
+)
+kde_project(
   kde/workspace/breeze
   DEPENDS
     extra-cmake-modules
@@ -556,6 +570,7 @@ kde_project(
     plasma-wayland-protocols
     breeze
     kdecoration
+    kglobalacceld
     kpipewire
     kscreenlocker
     kwayland
@@ -790,6 +805,7 @@ kde_project(
     plasma5support
     networkmanager-qt
     qqc2-desktop-style
+    kglobalacceld
     milou
 )
 kde_project(

@@ -626,3 +626,7 @@
 	path = src/extragear/libs/kirigami-addons
 	url = https://invent.kde.org/libraries/kirigami-addons.git
 	branch = master
+[submodule "src/playground/base/kglobalacceld"]
+	path = src/playground/base/kglobalacceld
+	url = https://invent.kde.org/plasma/kglobalacceld.git
+	branch = master
