@@ -809,6 +809,11 @@ kde_project(
     milou
 )
 kde_project(
+  extragear/libs/pulseaudio-qt
+  DEPENDS
+    extra-cmake-modules
+)
+kde_project(
   frameworks/modemmanager-qt
   DEPENDS
     extra-cmake-modules
@@ -851,6 +856,7 @@ kde_project(
     kstatusnotifieritem
     ksvg
     kirigami-addons
+    pulseaudio-qt
     libplasma
     plasma-workspace
 )

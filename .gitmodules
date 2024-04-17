@@ -630,3 +630,7 @@
 	path = src/playground/base/kglobalacceld
 	url = https://invent.kde.org/plasma/kglobalacceld.git
 	branch = master
+[submodule "src/extragear/libs/pulseaudio-qt"]
+	path = src/extragear/libs/pulseaudio-qt
+	url = https://invent.kde.org/libraries/pulseaudio-qt.git
+	branch = master

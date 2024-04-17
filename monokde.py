@@ -19,6 +19,7 @@ def is_included(path: str):
         "kdesupport/plasma-wayland-protocols",
         "kde/workspace",
         "extragear/libs/kirigami-addons",
+        "extragear/libs/pulseaudio-qt",
         "playground/base/kglobalacceld",
     ]
 
