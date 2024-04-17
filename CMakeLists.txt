@@ -28,6 +28,7 @@ function(kde_project ARG_PATH)
         -DBUILD_TESTING=OFF
         -DBUILD_QT5=OFF
         -DWITH_PYTHON_VENDORING=OFF
+        -DQT_MAJOR_VERSION=6
     BUILD_COMMAND ninja
     BUILD_ALWAYS ON
     LOG_CONFIGURE ON
