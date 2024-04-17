@@ -26,7 +26,7 @@ function(kde_project ARG_PATH)
         -DBUILD_SHARED_LIBS=ON
         -DCMAKE_BUILD_TYPE=Release
         -DBUILD_TESTING=OFF
-    BUILD_COMMAND ninja -d explain
+    BUILD_COMMAND ninja
     BUILD_ALWAYS ON
     LOG_CONFIGURE ON
     LOG_BUILD ON
